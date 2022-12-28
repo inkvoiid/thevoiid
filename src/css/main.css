@@ -1,0 +1,52 @@
+@font-face 
+{
+    font-family: 'Bodo Amat';
+    src: local("Bodo Amat") url("../media/fonts/bodoamat.ttf") format("truetype");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                        'embedded-opentype', and 'svg' */
+}
+
+body
+{
+    background-color: darkcyan;
+    font-family: "Bodo Amat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main
+{
+    margin-left: 25%;
+    padding: auto 25%;
+}
+
+#nav
+{
+    background-color: #232020;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+}
+
+
+.rainbowBorder1{border-image: linear-gradient(to bottom, #EC0F47, #DD4F2B, #EE8F3D) 1;}.rainbowBorder1 h1{color:#EC0F47;}.rainbowBorder1 p{color:#EE8F3D;}
+.rainbowBorder2{border-image: linear-gradient(to bottom, #EE8F3D, #EF9946, #F5C76E) 1;}.rainbowBorder2 h1{color:#EE8F3D;}.rainbowBorder2 p{color:#F5C76E;}
+.rainbowBorder3{border-image: linear-gradient(to bottom, #F5C76E, #2EB280, #0BAE77) 1;}.rainbowBorder3 h1{color:#F5C76E;}.rainbowBorder3 p{color:#0BAE77;}
+.rainbowBorder4{border-image: linear-gradient(to bottom, #0BAE77, #00ADA3, #01678F) 1;}.rainbowBorder4 h1{color:#0BAE77;}.rainbowBorder4 p{color:#01678F;}
+.rainbowBorder5{border-image: linear-gradient(to bottom, #01678F, #6F4779, #5D2A6F) 1;}.rainbowBorder5 h1{color:#01678F;}.rainbowBorder5 p{color:#5D2A6F;}
+.rainbowBorder6{border-image: linear-gradient(to bottom, #5D2A6F, #A82C51, #EC0F47) 1;}.rainbowBorder6 h1{color:#5D2A6F;}.rainbowBorder6 p{color:#EC0F47;}
+
+.tabTitle {
+    margin: 0;
+    padding: 0;
+    color: #56c7c9;
+}
+
+article
+{
+    background-image: "../media/images/articlebar.png";
+    background-color: #232020;
+    color: aqua;
+}
+
+article h1 {
+    font-family: "Cooper Black";
+    font-size: 26pt;
+}
