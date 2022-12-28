@@ -1,19 +1,26 @@
 @font-face 
 {
-    font-family: 'Bodo Amat';
-    src: local("Bodo Amat") url("../media/fonts/bodoamat.ttf") format("truetype");
+    font-family: 'Milky Honey';
+    src:url("./../media/fonts/milkyhoney.ttf") local("Milky Honey") format("truetype");
     /* other formats include: 'woff2', 'truetype, 'opentype',
                         'embedded-opentype', and 'svg' */
 }
 
+@font-face 
+{
+    font-family: 'Mulled Wine Season';
+    src:url("./../media/fonts/mulledwineseason.otf") local("Milky Honey") format("opentype");
+}
+
 body
 {
-    background-color: darkcyan;
-    font-family: "Bodo Amat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00aeae;
+    font-family: "Mulled Wine Season", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
 }
 main
 {
-    margin-left: 25%;
+    margin-left: 17.5%;
     padding: auto 25%;
 }
 
@@ -21,32 +28,103 @@ main
 {
     background-color: #232020;
     position: absolute;
-    width: 25%;
+    width: 17.5%;
     height: 100%;
+    top:0%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+nav a img 
+{
+    width: 100%;
+    padding: 12.5% 0 3.5%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 18%;
+}
+
+nav li a {
+    color: #fff;
+    font-size: 1.25vw;
+    text-decoration: none;
+}
+
+nav li a:hover {
+  color: cyan;
+  text-decoration: underline;
 }
 
 
-.rainbowBorder1{border-image: linear-gradient(to bottom, #EC0F47, #DD4F2B, #EE8F3D) 1;}.rainbowBorder1 h1{color:#EC0F47;}.rainbowBorder1 p{color:#EE8F3D;}
-.rainbowBorder2{border-image: linear-gradient(to bottom, #EE8F3D, #EF9946, #F5C76E) 1;}.rainbowBorder2 h1{color:#EE8F3D;}.rainbowBorder2 p{color:#F5C76E;}
+.rainbowBorder1{border-image: linear-gradient(to bottom, #EC0F47, #d46346, #f6a55f) 1;}.rainbowBorder1 h1{color:#EC0F47;}.rainbowBorder1 p{color:#f6a55f;}
+.rainbowBorder2{border-image: linear-gradient(to bottom, #f6a55f, #EF9946, #F5C76E) 1;}.rainbowBorder2 h1{color:#EE8F3D;}.rainbowBorder2 p{color:#F5C76E;}
 .rainbowBorder3{border-image: linear-gradient(to bottom, #F5C76E, #2EB280, #0BAE77) 1;}.rainbowBorder3 h1{color:#F5C76E;}.rainbowBorder3 p{color:#0BAE77;}
 .rainbowBorder4{border-image: linear-gradient(to bottom, #0BAE77, #00ADA3, #01678F) 1;}.rainbowBorder4 h1{color:#0BAE77;}.rainbowBorder4 p{color:#01678F;}
 .rainbowBorder5{border-image: linear-gradient(to bottom, #01678F, #6F4779, #5D2A6F) 1;}.rainbowBorder5 h1{color:#01678F;}.rainbowBorder5 p{color:#5D2A6F;}
 .rainbowBorder6{border-image: linear-gradient(to bottom, #5D2A6F, #A82C51, #EC0F47) 1;}.rainbowBorder6 h1{color:#5D2A6F;}.rainbowBorder6 p{color:#EC0F47;}
 
-.tabTitle {
+.tabTitle 
+{
     margin: 0;
     padding: 0;
     color: #56c7c9;
 }
 
-article
+.center 
 {
-    background-image: "../media/images/articlebar.png";
-    background-color: #232020;
-    color: aqua;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.row
+{
+    display: flex;
 }
 
-article h1 {
-    font-family: "Cooper Black";
+.col
+{
+    flex: 1;
+}
+
+article
+{
+    background-image: url(../media/images/articlebar.png);
+    background-repeat: no-repeat;
+    background-size: 175em;
+    background-position: top right;
+    border-style: solid;
+    border-width: 10px;
+    background-color: #232020;
+    color: aqua;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 0.3% 1.5%;
+    margin: 5% 2.5%;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6
+{
+    font-family:"Milky Honey", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1
+{
+    margin: 1rem auto;
     font-size: 26pt;
+}
+
+article a
+{
+    text-decoration:none;
+    background-color: #f6ff00;
+    color:#232020;
+    padding: 2px;
+}
+
+article a:hover
+{
+    text-decoration: underline;
 }
