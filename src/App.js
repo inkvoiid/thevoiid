@@ -23,7 +23,7 @@ function App()
 
 function Home() {
   return (
-    <main className="main">
+    <main>
 
       <div className="row">
         <div className="col" style={{flex: 3, marginTop:"5%"}}>

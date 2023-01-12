@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'Milky Honey';
-    src:url("./../media/fonts/milkyhoney.ttf") local("Milky Honey") format("truetype");
+    src:url("./../media/fonts/milkyhoney.ttf") format("truetype");
     /* other formats include: 'woff2', 'truetype, 'opentype',
                         'embedded-opentype', and 'svg' */
 }
@@ -9,7 +9,7 @@
 @font-face 
 {
     font-family: 'Mulled Wine Season';
-    src:url("./../media/fonts/mulledwineseason.otf") local("Milky Honey") format("opentype");
+    src:url("./../media/fonts/mulledwineseason.otf") format("opentype");
 }
 
 body
