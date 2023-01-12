@@ -1,7 +1,9 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './css/main.css';
 import Navbar from "./Navbar";
+import Voiidpack from "./Voiidpack";
 import Photography from "./Photography";
+import Music from "./Music";
 
 import Profpic from './media/images/profpic.jpg';
 
@@ -13,8 +15,9 @@ function App()
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Voiidpack" element={<Home />} />
+          <Route path="/Voiidpack" element={<Voiidpack />} />
           <Route path="/Photography" element={<Photography />} />
+          <Route path="/Music" element={<Music />} />
         </Routes>
       </BrowserRouter>
     </div>
