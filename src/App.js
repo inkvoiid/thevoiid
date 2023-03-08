@@ -1,4 +1,8 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { Link } from 'react-router-dom';
+import TitleBackground from './media/images/title-background.png';
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+
 import './css/main.css';
 import Navbar from "./Navbar";
 import Voiidpack from "./Voiidpack";
@@ -10,7 +14,7 @@ import Profpic from './media/images/profpic.jpg';
 function App() 
 {
   return (
-    <div>
+    <div style={{backgroundImage: "url(" + TitleBackground + ")", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPositionY: "50%"}}>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -27,29 +31,9 @@ function App()
 function Home() {
   return (
     <main>
-
-      <div className="row">
-        <div className="col" style={{flex: 3, marginTop:"5%"}}>
-      <article className="rainbowBorder1" style={{marginTop: 0}}>
-          <p class="tabTitle">main.txt</p>
-          <h1>Welcome to <span title="pogpogpogpogpog"><u>the voiid!</u></span></h1>
-          <p>inkvoiid's personal website, entirely self-designed and coded.</p>
-			</article>
-
-      <article className="rainbowBorder4" style={{marginTop: ""}}>
-          <p class="tabTitle">asdf.json</p>
-          <h1>Things you can find on here</h1>
-          <p>On this site, you can find: my resourcepack Voiidpack, now known as <a href="/voiidpack">voopack</a>, my <a href="/photography">photography</a> and my <a href="/music">music collection</a>.</p>
-			</article>
-      </div>
-
-      <article className="col rainbowBorder3">
-        <p class="tabTitle">inkvoiid.nfo</p>
-        <h1><u>inkvoiid</u></h1>
-        <img className="center" src={Profpic} alt="inkvoiid Profile Pic" width="75%"></img>
-        <p style={{textAlign: "center"}}>Artist, Guitarist, Programmer</p>
-        <p style={{textAlign: "center"}}><a href="https://twitter.com/inkvoiid?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @inkvoiid</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-      </article>
+      <div style={{color: "white", padding: 20, textAlign: 'right', height: "65vh"}}>
+        <h1 style={{marginBottom: "0", paddingBottom: "0", fontSize: "10rem"}}>the voiid.</h1>
+        <p style={{marginTop: "-2rem", marginRight: "3rem", paddingTop: "0", fontSize: "4vh", opacity: "75%"}}>by inkvoiid</p>
       </div>
     </main>
   );
