@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import { Link } from 'react-router-dom';
-import TitleBackground from './media/images/title-background.png';
+import TwitterIcon from './media/images/icons/twitter.svg';
+import GitHubIcon from './media/images/icons/github.svg';
 import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 import './css/main.css';
@@ -14,7 +15,7 @@ import Profpic from './media/images/profpic.jpg';
 function App() 
 {
   return (
-    <div style={{backgroundImage: "url(" + TitleBackground + ")", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPositionY: "50%"}}>
+    <div style={{}}>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -31,9 +32,33 @@ function App()
 function Home() {
   return (
     <main>
-      <div style={{color: "white", padding: 20, textAlign: 'right', height: "65vh"}}>
-        <h1 style={{marginBottom: "0", paddingBottom: "0", fontSize: "10rem"}}>the voiid.</h1>
-        <p style={{marginTop: "-2rem", marginRight: "3rem", paddingTop: "0", fontSize: "4vh", opacity: "75%"}}>by inkvoiid</p>
+      <div className="title">
+        <h1 className="titleText">the voiid.</h1>
+        <p className="titleSubtext">by inkvoiid</p>
+        <br/>
+        <h2 className="center">Stalk me, why don't ya?</h2>
+        <ul className="titleLinkList">
+          <li><a href="twitter.com/inkvoiid"><img src={TwitterIcon} width="50px"/><br/>Twitter</a></li>
+          
+          <li><a href="github.com/inkvoiid"><img src={GitHubIcon} width="50px"/><br/>GitHub</a></li>
+        </ul>
+      </div>
+
+      <div style={{textAlign: "center", height: "50vh"}}>
+        <h1>Yo bitch</h1>
+        <p>Yeah, you heard me. You a bitch.</p>
+      </div>
+      <div style={{backgroundColor: "#6F8583", height: "50vh"}}>
+        <br></br>
+      </div>
+      <div style={{height: "50vh"}}>
+        <br></br>
+      </div>
+      <div style={{backgroundColor: "#5FB4D1", height: "50vh"}}>
+        <div style={{backgroundColor: "whitesmoke"}}>
+                  <h1 style={{color: "#D7A89A"}}>Bugger it</h1>
+                  </div>
+
       </div>
     </main>
   );

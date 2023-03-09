@@ -3,11 +3,10 @@ import Logo from './media/images/thevoiid.png';
 
 function Navbar(){
     return (
-    <header id="nav">
+    <header id="nav" className='center'>
 		<nav>
 			<Link to="/">&gt;Home</Link>
 			<Link to="/voiidpack">&gt;voopack</Link>
-			<a href="https://inkvoiid.netlify.app"><img src={Logo} alt="the voiid." /></a>
 			<Link to="/photography">&gt;Photography</Link>
 			<Link to="/music">&gt;Music</Link>
 		</nav>
