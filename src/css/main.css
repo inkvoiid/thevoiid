@@ -41,11 +41,11 @@ nav a img
 }
 
 nav a {
-    color:#133a29;
+    color:white;
     font-size: 1.3rem;
     text-decoration: none;
     padding: 0 0.5rem;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -54,12 +54,16 @@ nav a:hover {
   text-decoration: underline;
 }
 
+#root div div:first-child{
+    
+    padding: 2rem;
+}
+
 .title {
     color: white;
-    padding: 2rem;
     text-align: center;
     background-image: url(../media/images/title-background.png);
-    background-color: #133a29;
+    background-color: #204237;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 33%;

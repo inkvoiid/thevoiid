@@ -15,7 +15,7 @@ import Profpic from './media/images/profpic.jpg';
 function App() 
 {
   return (
-    <div style={{}}>
+    <div>
       <BrowserRouter>
         <Navbar />
         <Routes>
