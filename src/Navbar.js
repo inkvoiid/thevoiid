@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Logo from './media/images/thevoiid.png';
 
 function Navbar(){
     return (
