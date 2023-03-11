@@ -1,16 +1,12 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { Link } from 'react-router-dom';
 import TwitterIcon from './media/images/icons/twitter.svg';
 import GitHubIcon from './media/images/icons/github.svg';
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 import './css/main.css';
 import Navbar from "./Navbar";
 import Voiidpack from "./Voiidpack";
 import Photography from "./Photography";
 import Music from "./Music";
-
-import Profpic from './media/images/profpic.jpg';
 
 function App() 
 {
@@ -38,9 +34,9 @@ function Home() {
         <br/>
         <h2 className="center">Stalk me, why don't ya?</h2>
         <ul className="titleLinkList">
-          <li><a href="twitter.com/inkvoiid"><img src={TwitterIcon} width="50px"/><br/>Twitter</a></li>
+          <li><a href="twitter.com/inkvoiid"><img src={TwitterIcon} width="50px" alt="twitter"/><br/>Twitter</a></li>
           
-          <li><a href="github.com/inkvoiid"><img src={GitHubIcon} width="50px"/><br/>GitHub</a></li>
+          <li><a href="github.com/inkvoiid"><img src={GitHubIcon} width="50px" alt="github"/><br/>GitHub</a></li>
         </ul>
       </div>
 
