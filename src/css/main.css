@@ -75,6 +75,9 @@ nav a:hover
 {
     display: none;
     margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px)

@@ -12,7 +12,7 @@ function Navbar(){
 			<Link to="/photography">Photography</Link>
 			<Link to="/music">Music</Link>
 			<Link to="/about">About Me</Link>
-			<a id='hamburger' href='#'><img src={MenuIcon} alt="Menu"/></a>
+			<button id='hamburger'><img src={MenuIcon} alt="Menu"/></button>
 		</nav>
 		{/* <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/inkvoiid?ref_src=twsrc%5Etfw">Tweets by inkvoiid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
 	</header>
