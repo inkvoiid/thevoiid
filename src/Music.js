@@ -1,8 +1,7 @@
 function Music(){
 	return (
 	<main>
-		<div className="rainbowBorder6" style={{marginTop: 0}}>
-			<p class="tabTitle">music.flac</p>
+		<div id="firstDiv" className="rainbowBorder6" style={{marginTop: 0}}>
 			<h1>Music</h1>
 			<p>Take a look at some snaps I've done in my lifetime.</p>
 		</div>

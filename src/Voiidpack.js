@@ -1,7 +1,7 @@
 function Voiidpack(){
 	return (
 	<main>
-      <div style={{textAlign: "center", height: "50vh"}}>
+      <div id="firstDiv"  style={{textAlign: "center", height: "50vh"}}>
         <h1>voopack</h1>
         <p>Voopack is a Minecraft resource pack that's been in development since 2018.</p>
       </div>

@@ -28,15 +28,18 @@ function App()
 function Home() {
   return (
     <main>
-      <div className="title">
+      <div id="firstDiv" className="title">
         <h1 className="titleText">the voiid.</h1>
         <p className="titleSubtext">by inkvoiid</p>
+
         <br/>
-        <h2 className="center">Stalk me, why don't ya?</h2>
+        <h2>Software Developer, Web Designer, Guitarist</h2>
+        <br/>
+
+        <h3 className="center">Stalk me, why don't ya?</h3>
         <ul className="titleLinkList">
-          <li><a href="twitter.com/inkvoiid"><img src={TwitterIcon} width="50px" alt="twitter"/><br/>Twitter</a></li>
-          
-          <li><a href="github.com/inkvoiid"><img src={GitHubIcon} width="50px" alt="github"/><br/>GitHub</a></li>
+          <li><a href="https://twitter.com/inkvoiid" target={"_blank"}><img src={TwitterIcon} width="50px" alt="twitter"/><br/>Twitter</a></li>
+          <li><a href="https://github.com/inkvoiid" target={"_blank"}><img src={GitHubIcon} width="50px" alt="github"/><br/>GitHub</a></li>
         </ul>
       </div>
 
@@ -52,7 +55,7 @@ function Home() {
       </div>
       <div style={{backgroundColor: "#5FB4D1", height: "50vh"}}>
         <div style={{backgroundColor: "whitesmoke"}}>
-                  <h1 style={{color: "#D7A89A"}}>Bugger it</h1>
+                  <h1>Bugger it</h1>
                   </div>
 
       </div>
