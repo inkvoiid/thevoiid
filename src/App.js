@@ -38,8 +38,8 @@ function Home() {
 
         <h3 className="center">Stalk me, why don't ya?</h3>
         <ul className="titleLinkList">
-          <li><a href="https://twitter.com/inkvoiid" target={"_blank"}><img src={TwitterIcon} width="50px" alt="twitter"/><br/>Twitter</a></li>
-          <li><a href="https://github.com/inkvoiid" target={"_blank"}><img src={GitHubIcon} width="50px" alt="github"/><br/>GitHub</a></li>
+          <li><a href="https://twitter.com/inkvoiid" target="_blank" rel="noreferrer"><img src={TwitterIcon} width="50px" alt="twitter"/><br/>Twitter</a></li>
+          <li><a href="https://github.com/inkvoiid" target="_blank" rel="noreferrer"><img src={GitHubIcon} width="50px" alt="github"/><br/>GitHub</a></li>
         </ul>
       </div>
 
