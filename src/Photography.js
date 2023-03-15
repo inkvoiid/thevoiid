@@ -16,9 +16,11 @@ function Photography(){
 			<div data-tilt className="paper">
 				<img src={images(path)} alt={images(path)}/>
 				<p>{images.keys()[index].split('/').pop()}</p>
-			</div>
-		))}</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> 
+			</div>))}
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+  		<script src="node_modules/tilt.js/dest/tilt.jquery.min.js"></script>
 	</main>
 	  );
 }

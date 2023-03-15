@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import Voiidpack from "./Voiidpack";
 import Photography from "./Photography";
 import Music from "./Music";
+import MinecraftWorlds from "./MinecraftWorlds";
 
 function App() 
 {
@@ -18,6 +19,7 @@ function App()
           <Route path="/" element={<Home />} />
           <Route path="/Voiidpack" element={<Voiidpack />} />
           <Route path="/Photography" element={<Photography />} />
+          <Route path="/MinecraftWorlds" element={<MinecraftWorlds />} />
           <Route path="/Music" element={<Music />} />
         </Routes>
       </BrowserRouter>

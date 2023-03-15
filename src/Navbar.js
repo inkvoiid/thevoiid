@@ -10,6 +10,7 @@ function Navbar(){
 			<Link to="/">Home</Link>
 			<Link to="/voiidpack">voopack</Link>
 			<Link to="/photography">Photography</Link>
+			<Link to="/minecraftworlds">Minecraft Worlds</Link>
 			<Link to="/music">Music</Link>
 			<Link to="/about">About Me</Link>
 			<button id='hamburger'><img src={MenuIcon} alt="Menu"/></button>
