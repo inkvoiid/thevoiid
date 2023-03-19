@@ -1,9 +1,11 @@
 function Music(){
 	return (
 	<main>
-		<div id="firstDiv" className="rainbowBorder6" style={{marginTop: 0}}>
+		<div className="page-title underline">
 			<h1>Music</h1>
-			<p>Take a look at some snaps I've done in my lifetime.</p>
+			</div>
+		<div className="container">
+			<p>Big fan of The Beatles and Peach Pit. Own some records.</p>
 		</div>
 	</main>
 	  );

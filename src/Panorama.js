@@ -7,7 +7,7 @@ const Pano = ({src}) => {
     src
   }), [src]);
 
-  return <View360 className="is-16by9" projection={projection} />
+  return <View360 className="is-16by9" fov={95} initialZoom={0} projection={projection} />
 }
 
 export default Pano;

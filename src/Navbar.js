@@ -8,7 +8,7 @@ function Navbar(){
 			<a id='navtitle' href="https://inkvoiid.netlify.app">the voiid.</a>
 			<p>|</p>
 			<Link to="/">Home</Link>
-			<Link to="/voiidpack">voopack</Link>
+			<Link to="/voiidpack">VOIIDPack</Link>
 			<Link to="/photography">Photography</Link>
 			<Link to="/minecraftworlds">Minecraft Worlds</Link>
 			<Link to="/music">Music</Link>

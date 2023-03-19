@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import tiltJquery from "tilt.js";
+
 const images = require.context("./media/images/gallery", false)
 
 const imagePaths = images.keys();
@@ -5,22 +8,20 @@ const imagePaths = images.keys();
 function Photography(){
 	return (
 	<main>
-		<div id="firstDiv" className="rainbowBorder2" style={{textAlign: "center"}}>
+		<div className="page-title underline">
         	<h1>Photography</h1>
+		</div>
+		<div className="container">
 			<p>Take a look at some snaps I've done in my lifetime.</p>
-
 		</div>
 
-		<div>			
+		<div className="gallery">			
 			{imagePaths.map((path, index) => (
-			<div data-tilt className="paper">
+			<div data-tilt className="polaroid">
 				<img src={images(path)} alt={images(path)}/>
-				<p>{images.keys()[index].split('/').pop()}</p>
+				<p>{images.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}</p>
 			</div>))}
 		</div>
-		
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-  		<script src="node_modules/tilt.js/dest/tilt.jquery.min.js"></script>
 	</main>
 	  );
 }

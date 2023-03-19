@@ -4,6 +4,7 @@ import GitHubIcon from './media/images/icons/github.svg';
 
 import './css/main.css';
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Voiidpack from "./Voiidpack";
 import Photography from "./Photography";
 import Music from "./Music";
@@ -22,6 +23,7 @@ function App()
           <Route path="/MinecraftWorlds" element={<MinecraftWorlds />} />
           <Route path="/Music" element={<Music />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
@@ -30,7 +32,7 @@ function App()
 function Home() {
   return (
     <main>
-      <div id="firstDiv" className="title">
+      <div className="title">
         <h1 className="titleText">the voiid.</h1>
         <p className="titleSubtext">by inkvoiid</p>
 
@@ -45,21 +47,21 @@ function Home() {
         </ul>
       </div>
 
-      <div style={{textAlign: "center", height: "50vh"}}>
+      <div className="container">
         <h1>Yo bitch</h1>
         <p>Yeah, you heard me. You a bitch.</p>
       </div>
-      <div style={{backgroundColor: "#6F8583", height: "50vh"}}>
+      <div className="container" style={{backgroundColor: "#6F8583"}}>
         <br></br>
       </div>
-      <div style={{height: "50vh"}}>
+      <div className="container">
         <br></br>
       </div>
-      <div style={{backgroundColor: "#5FB4D1", height: "50vh"}}>
-        <div style={{backgroundColor: "whitesmoke"}}>
-                  <h1>Bugger it</h1>
-                  </div>
-
+      <div className="container" style={{backgroundColor: "#5FB4D1"}}>
+        <br></br>
+      </div>
+      <div className="container" style={{backgroundColor: "whitesmoke"}}>
+        <h1>Bugger it</h1>
       </div>
     </main>
   );
