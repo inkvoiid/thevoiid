@@ -39,7 +39,6 @@ function MinecraftWorlds(){
 
 			<div className="container mcworldcontainer">
 				<div>
-					{/* <Panorama src={DamonBase} /> */}
 					
 				</div>
 				<div>
@@ -59,6 +58,8 @@ function MinecraftWorlds(){
 			<h1 id="mc2023" style={{textAlign:"center",color:"white"}}>2023</h1>
 
 			<div className="container">
+				
+				<Panorama src={DamonBase} />
 				<Panorama src={ZachHouse} />
 			</div>
 		</ScrollSpy>
