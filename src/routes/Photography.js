@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import tiltJquery from "tilt.js";
-import jQuery from "jquery";
 import CameraPic from "../media/images/camera.jpg"
 
 const images = require.context("../media/images/gallery", false)
