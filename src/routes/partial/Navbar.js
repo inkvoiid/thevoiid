@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
-import MenuIcon from './media/images/icons/menu.svg';
+import MenuIcon from '../../media/images/icons/menu.svg';
 
 function Navbar(){
     return (
     <header id="nav" className='center'>
 		<nav>
-			<a id='navtitle' href="https://inkvoiid.netlify.app">the voiid.</a>
+			<Link to="/" id='navtitle'>the voiid.</Link>
 			<p>|</p>
-			<Link to="/">Home</Link>
 			<Link to="/voiidpack">VOIIDPack</Link>
 			<Link to="/photography">Photography</Link>
 			<Link to="/minecraftworlds">Minecraft Worlds</Link>
 			<Link to="/music">Music</Link>
+			<Link to="/voiidos">VOIIDOS</Link>
 			<Link to="/about">About Me</Link>
 			<button id='hamburger'><img src={MenuIcon} alt="Menu"/></button>
 		</nav>

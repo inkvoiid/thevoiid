@@ -3,12 +3,14 @@ import TwitterIcon from './media/images/icons/twitter.svg';
 import GitHubIcon from './media/images/icons/github.svg';
 
 import './css/main.css';
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Voiidpack from "./Voiidpack";
-import Photography from "./Photography";
-import Music from "./Music";
-import MinecraftWorlds from "./MinecraftWorlds";
+import Navbar from "./routes/partial/Navbar";
+import Footer from "./routes/partial/Footer";
+import VOIIDPack from "./routes/VOIIDPack";
+import Photography from "./routes/Photography";
+import Music from "./routes/Music";
+import VOIIDOS from "./routes/VOIIDOS";
+import MinecraftWorlds from "./routes/MinecraftWorlds";
+import PageNotFound from "./routes/PageNotFound";
 
 function App() 
 {
@@ -17,11 +19,13 @@ function App()
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Voiidpack" element={<Voiidpack />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/VOIIDPack" element={<VOIIDPack />} />
           <Route path="/Photography" element={<Photography />} />
           <Route path="/MinecraftWorlds" element={<MinecraftWorlds />} />
           <Route path="/Music" element={<Music />} />
+          <Route path="/VOIIDOS" element={<VOIIDOS />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
