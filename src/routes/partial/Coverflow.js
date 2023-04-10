@@ -6,16 +6,16 @@ const AlbumCoverflow = ({images}) => {
   return <div onWheel={handleWheel}>
 <ul class="cards" id="cards">
     <li id="card_0">
-        <img src="https://assets.codepen.io/89905/coverflow--Front-1024x1024.jpg" width="1200" height="1200" />
+        <img src="https://assets.codepen.io/89905/coverflow--Front-1024x1024.jpg" width="1200" height="1200" alt="Voo" />
     </li>
     <li id="card_1">
-        <img src="https://assets.codepen.io/89905/coverflow--A-Thousand-Clouds-Front-Cover-1024x1024.jpg" width="1200" height="1200" />
+        <img src="https://assets.codepen.io/89905/coverflow--A-Thousand-Clouds-Front-Cover-1024x1024.jpg" width="1200" height="1200" alt="Voo" />
     </li>
     <li id="card_2">
-        <img src="https://assets.codepen.io/89905/coverflow--Front-1024x1024.jpg" width="1200" height="1200" />
+        <img src="https://assets.codepen.io/89905/coverflow--Front-1024x1024.jpg" width="1200" height="1200" alt="Voo" />
     </li>
     <li id="card_3">
-        <img src="https://assets.codepen.io/89905/coverflow--A-Thousand-Clouds-Front-Cover-1024x1024.jpg" width="1200" height="1200" />
+        <img src="https://assets.codepen.io/89905/coverflow--A-Thousand-Clouds-Front-Cover-1024x1024.jpg" width="1200" height="1200" alt="Voo" />
     </li>
     </ul>
 
