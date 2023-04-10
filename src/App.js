@@ -1,6 +1,9 @@
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import TwitterIcon from './media/images/icons/twitter.svg';
 import GitHubIcon from './media/images/icons/github.svg';
+import AndMyRookPreview from './media/images/home/andmyrook-preview.png';
+import VoiidOSPreview from './media/images/home/voiidos-preview.png';
+import VOIIDPackPreview from './media/images/home/voiidpack-preview.png';
 
 import './css/main.css';
 import Navbar from "./routes/partial/Navbar";
@@ -60,7 +63,28 @@ function Home() {
       <article className="container outer-container container-green">
         <h1>Projects</h1>
         <section className="inner-container">
-        <p>You can find my most popular projects on this site, such as my Resource Pack <Link to="/voiidpack">VOIIDPack</Link> and my Chess-like game <Link to="/andmyrook">And My Rook!</Link></p>
+        <p>You can find my most popular projects on this site, such as my Resource Pack <Link to="/projects/voiidpack">VOIIDPack</Link> and my Chess-like game <Link to="/projects/andmyrook">And My Rook!</Link></p>
+        <div style={{display:"flex",flex:"1",gap:"1rem"}}>
+          <Link to="/projects/andmyrook.js" style={{backgroundColor:"transparent"}}>
+            <div className="container outer-container">
+              <img src={AndMyRookPreview} alt="And My Rook Preview" width="100%"/>
+              <h2 style={{color:"var(--text-color)"}}>And My Rook!</h2>
+            </div>
+          </Link>
+          <Link to="/projects/voiidos.js" style={{backgroundColor:"transparent"}}>
+            <div className="container outer-container">
+              <img src={VoiidOSPreview} alt="VoiidOS Preview" width="100%"/>
+              <h2 style={{color:"var(--text-color)"}}>VoiidOS</h2>
+            </div>
+          </Link>
+          <Link to="/projects/voiidpack.js" style={{backgroundColor:"transparent"}}>
+            <div className="container outer-container">
+              <img src={VOIIDPackPreview} alt="VOIIDPack Preview" width="100%"/>
+              <h2 style={{color:"var(--text-color)"}}>VOIIDPack</h2>
+            </div>
+          </Link>
+        </div>
+        
         </section>
       </article>
       <article className="container">
