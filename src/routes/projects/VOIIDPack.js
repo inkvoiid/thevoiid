@@ -1,5 +1,5 @@
 function VOIIDPack(){
-  let voiidpackReleases = require('../data/voiidpack-releases.json');
+  let voiidpackReleases = require('../../data/voiidpack-releases.json');
 	return (
 	<main>
       <div className="page-title underline">

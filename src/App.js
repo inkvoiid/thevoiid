@@ -1,16 +1,17 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import TwitterIcon from './media/images/icons/twitter.svg';
 import GitHubIcon from './media/images/icons/github.svg';
 
 import './css/main.css';
 import Navbar from "./routes/partial/Navbar";
 import Footer from "./routes/partial/Footer";
-import VOIIDPack from "./routes/VOIIDPack";
+import VOIIDPack from "./routes/projects/VOIIDPack";
 import Photography from "./routes/Photography";
 import Music from "./routes/Music";
-import VOIIDOS from "./routes/VOIIDOS";
+import VoiidOS from "./routes/projects/VoiidOS";
 import MinecraftWorlds from "./routes/MinecraftWorlds";
 import PageNotFound from "./routes/PageNotFound";
+import AndMyRook from "./routes/projects/AndMyRook";
 
 function App() 
 {
@@ -20,11 +21,12 @@ function App()
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/VOIIDPack" element={<VOIIDPack />} />
+          <Route path="/projects/AndMyRook" element={<AndMyRook />} />
+          <Route path="/projects/VoiidOS" element={<VoiidOS />} />
+          <Route path="/projects/VOIIDPack" element={<VOIIDPack />} />
           <Route path="/Photography" element={<Photography />} />
           <Route path="/MinecraftWorlds" element={<MinecraftWorlds />} />
           <Route path="/Music" element={<Music />} />
-          <Route path="/VOIIDOS" element={<VOIIDOS />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
@@ -51,22 +53,25 @@ function Home() {
         </ul>
       </div>
 
-      <div className="container">
+      <article className="container">
         <h1>Yo bitch</h1>
         <p>Yeah, you heard me. You a bitch.</p>
-      </div>
-      <div className="container" style={{backgroundColor: "#6F8583"}}>
+      </article>
+      <article className="container outer-container container-green">
+        <h1>Projects</h1>
+        <section className="inner-container">
+        <p>You can find my most popular projects on this site, such as my Resource Pack <Link to="/voiidpack">VOIIDPack</Link> and my Chess-like game <Link to="/andmyrook">And My Rook!</Link></p>
+        </section>
+      </article>
+      <article className="container">
         <br></br>
-      </div>
-      <div className="container">
+      </article>
+      <article className="container" style={{backgroundColor: "#5FB4D1"}}>
         <br></br>
-      </div>
-      <div className="container" style={{backgroundColor: "#5FB4D1"}}>
-        <br></br>
-      </div>
-      <div className="container" style={{backgroundColor: "whitesmoke"}}>
+      </article>
+      <article className="container" style={{backgroundColor: "whitesmoke"}}>
         <h1>Bugger it</h1>
-      </div>
+      </article>
     </main>
   );
 }

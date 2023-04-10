@@ -25,7 +25,7 @@ function Photography(){
 
 		<div className="gallery">			
 			{imagePaths.map((path, index) => (
-			<div data-tilt className="polaroid">
+			<div tilt className="polaroid">
 				<img src={images(path)} alt={images(path)}/>
 				<p>{images.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}</p>
 			</div>))}

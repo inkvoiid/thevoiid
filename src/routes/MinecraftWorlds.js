@@ -9,7 +9,7 @@ import ZachHouse from "../media/images/minecraftworlds/panoramas/zachhouse.jpg";
 function MinecraftWorlds(){
 	return (
 	<main>
-		<div style={{position:"fixed"}}>
+		<div className="scrollspyNav">
 			<ul>
 				<li><a data-to-scrollspy-id="mc2017" href="#mc2017">2017</a></li>
 				<li><a data-to-scrollspy-id="mc2018" href="#mc2018">2018</a></li>
@@ -26,7 +26,9 @@ function MinecraftWorlds(){
 		</div>
 
 		<div className="container">
-		<p>View some screenshots in 360 degrees.</p>
+		<p>
+			View some of the Minecraft server worlds I've catalogued. Who knows? Perhaps you might have taken part in some of them.
+		</p>
 		</div>
 		<ScrollSpy>
 			<h1 id="mc2017" className="underline" style={{textAlign:"center",color:"white", textDecorationColor:"steelblue"}}>2017</h1>

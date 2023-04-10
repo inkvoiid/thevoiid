@@ -8,24 +8,36 @@
 :root 
 {
     --background-colour: #272727;
-    --peach: #ecb1a0;
     --brown: #8d512e;
+    --beige: #ddd3c8;
+    --darkgreen: #1b464c;
+    --peach: #ecb1a0;
+    --paleforestgreen: #6F8583;
+    --offwhite: #FFFFF2;
+    --text-color: #232020;
 }
 
 html {
     scroll-padding-top: 6rem; /* height of your navbar */
+    scroll-behavior: smooth;
   }
 
 body
 {
     font-family: 'Golos Text', sans-serif;
-    font-size: min(1.3rem, 5vw);
+    font-size: min(1.25rem, 5vw);
     background-image: url(../media/images/sky.jpg);
     background-color: var(--background-colour);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 5%;
+    color: var(--text-color);
+}
+
+main
+{
+    margin: 0 12.5%;
 }
 
 .page-title h1
@@ -47,8 +59,8 @@ body
 .container 
 {
     text-align: center;
-    padding: 1rem 5vw;
-    margin: 2rem 12.5%;
+    margin: 2rem 0;
+    padding: 1rem 5rem;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 30px 50px 0 rgba(0,0,0,.35);
@@ -61,6 +73,7 @@ body
 #nav
 {
     background-color: #8d512eee;
+    backdrop-filter: blur(2px);
     color:var(--peach);
     position: sticky;
     top: 1rem;
@@ -76,6 +89,7 @@ body
 {
     font-family: "DM Serif Display";
     font-size: min(1.5rem);
+    padding-block: 0.25rem;
 }
 
 nav p
@@ -83,64 +97,98 @@ nav p
     display: inline;
 }
 
-nav a 
+nav a, nav button 
 {
+    background-color: transparent;
+    border: none;
     color:white;
     font-size: min(1.3rem, 5vw);
     text-decoration: none;
-    padding: 0 0.5rem;
-    font-weight: 500;
+    padding: 0.5rem 0.5rem;
+    font-weight:500;
 }
 
-nav a:hover 
+nav a:hover, nav button:hover
+{
+    border-radius: 1rem;
+    background-color: #ffffffdb;
+    color: var(--brown);
+}
+
+ .active
 {
   color: var(--peach);
   
   text-decoration: underline;
 }
 
+.nav button{
+    
+    cursor: pointer;
+}
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: block;
+    position: absolute;
+    top: 2.75rem;
+    min-width: 100%;
+    width: max-content;
+    background-color: #ffffff5a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    display: block;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    color: white;
+    font-weight: 600;
+}
+
+.dropdown-content a:hover
+{
+  background-color: #ffffffb3;
+  color: var(--brown);
+  border-radius: 0.5rem;
+}
+
+
+.dropdown-content a.active
+{
+    border-radius: 0.5rem;
+    color: var(--darkgreen);
+    
+}
+
 #hamburger
 {
     display: none;
-    margin-top: 5px;
+    margin-top: -3px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px)
-{
-    #hamburger
-    {
-        display: block;
-        float: right;
-    }
-    #nav
-    {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        border-radius: 0%;
-        top: 0;
-    }
-    nav :not(:first-child)
-    {
-        display: none;
-    }
 
-    .container 
-    {
-        padding: 1rem 2vw;
-        margin: 2rem 5vw;
-    }
-
-}
 
 .title 
 {
     color: white;
     text-align: center;
-    padding: 0 2rem 1rem;
+    padding: 0 0 1rem;
     line-height: 1;
 }
 
@@ -156,7 +204,7 @@ nav a:hover
 .titleSubtext
 {
     margin-top: 0;
-    margin-right: min(3rem, 5vw);
+    margin-right: min(3.5rem, 5vw);
     text-align: right;
     font-size: min(2rem,4vw);
     opacity: 75%;
@@ -182,6 +230,8 @@ nav a:hover
     color: white;
     font-weight: 700;
     font-size: 1.25rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .titleLinkList li a:hover{
@@ -244,21 +294,52 @@ td, th {
     border: 1px solid #00000011;
     text-align: center;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #00000011;
-  }
+}
 
-.highlighter
+tr:nth-child(even) {
+    background-color: #00000011;
+}
+
+.container-green
+{
+    background: var(--paleforestgreen);
+}
+
+.container-green h1, .container-green h2
+{
+    color: var(--offwhite);
+}
+
+.container-green > p
+{
+    color: white;
+}
+
+.outer-container 
+{
+    padding: 1rem;
+}
+
+.inner-container 
+{
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 15px 25px 0 rgba(0,0,0,.35);
+}
+
+.container a:not(table a, table i)
 {
     text-decoration:none;
-    background-color: #f6ff00;
-    color:#232020;
+    background-color: var(--peach);
+    display: inline-block;
+    color:#181818;
     padding: 2px;
 }
 
-.highlighter:hover
+.container a:hover:not(table a, table i)
 {
     text-decoration: underline;
 }
@@ -273,14 +354,11 @@ footer
 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    padding: 1rem min(5vw);
     margin: 2rem 2rem;
 }
 
 .polaroid {
-    padding: 1rem;
     padding-inline: auto;
     background-color: whitesmoke;
     background-image: url("../media/images/stripe.png");
@@ -307,6 +385,24 @@ footer
     zoom: 50%;
 }
 
+.scrollspyNav
+{
+    position: fixed;
+    left: 2.5vw;
+    z-index: 1;
+}
+
+.scrollspyNav a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.scrollspyNav a:hover
+{
+    text-decoration: underline;
+}
+
 .active-scroll-spy
 {
     color: yellowgreen;
@@ -317,4 +413,62 @@ footer
     display: flex;
     flex-wrap: wrap-reverse;
     flex: 1;
+}
+
+.left p
+{
+    text-align: left;
+}
+
+@media screen and (max-width: 600px)
+{
+    body 
+    {
+        font-size: min(1rem, 5vw);
+    }
+
+    main
+    {
+        margin: 2rem 5vw;
+    }
+
+    #hamburger
+    {
+        display: block;
+        float: right;
+    }
+    #nav
+    {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        margin: 0;
+        border-radius: 0%;
+        top: 0;
+    }
+    nav :not(:first-child)
+    {
+        display: none;
+    }
+
+    .container 
+    {
+        padding: 1rem 5vw;
+    }
+
+    .container h1
+    {
+        font-size: min(2rem, 10vw);
+    }
+
+    .outer-container 
+    {
+        padding: 1rem 2vw;
+    }
+
+    .inner-container 
+    {
+        padding: 1rem;
+    }
+
 }

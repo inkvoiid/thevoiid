@@ -1,8 +1,8 @@
-function Voiidpack(){
+function VoiidOS(){
 	return (
 	<main>
       <div className="page-title underline">
-        <h1>VOIIDOS</h1>
+        <h1>VoiidOS</h1>
       </div>
       <div className="container">
         <p>Trinklet 4 Zach.</p>
@@ -12,4 +12,4 @@ function Voiidpack(){
 	  );
 }
 
-export default Voiidpack;
+export default VoiidOS;
