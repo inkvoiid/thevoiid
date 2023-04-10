@@ -69,18 +69,21 @@ function Home() {
             <div className="container outer-container">
               <img src={AndMyRookPreview} alt="And My Rook Preview" width="100%"/>
               <h2 style={{color:"var(--text-color)"}}>And My Rook!</h2>
+              <p>My Chess-like game about leveling up your Chess pieces.</p>
             </div>
           </Link>
           <Link to="/projects/voiidos.js" style={{backgroundColor:"transparent"}}>
             <div className="container outer-container">
               <img src={VoiidOSPreview} alt="VoiidOS Preview" width="100%"/>
               <h2 style={{color:"var(--text-color)"}}>VoiidOS</h2>
+              <p>My CLI style "OS".</p>
             </div>
           </Link>
           <Link to="/projects/voiidpack.js" style={{backgroundColor:"transparent"}}>
             <div className="container outer-container">
               <img src={VOIIDPackPreview} alt="VOIIDPack Preview" width="100%"/>
               <h2 style={{color:"var(--text-color)"}}>VOIIDPack</h2>
+              <p>My Minecraft Resource Pack</p>
             </div>
           </Link>
         </div>
