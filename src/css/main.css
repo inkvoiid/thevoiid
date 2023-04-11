@@ -114,8 +114,8 @@ nav a:hover, nav button:hover
     background-color: #ffffffdb;
     color: var(--brown);
 }
-
- .active
+ 
+.active
 {
   color: var(--peach);
   
@@ -256,8 +256,8 @@ nav a:hover, nav button:hover
 .column-layout
 {
     display: grid;
-    gap: 2rem;
-    padding-inline: 2rem;
+    gap: 1rem;
+    padding-inline: 1rem;
 }
 
 @media screen and (min-width: 600px)
@@ -333,14 +333,16 @@ tr:nth-child(even) {
 .container a:not(table a, table i)
 {
     text-decoration:none;
-    background-color: var(--peach);
+    background-color: #ff987c7a;
     display: inline-block;
     color:#181818;
     padding: 2px;
+    margin-block: 2px;
 }
 
 .container a:hover:not(table a, table i)
 {
+    background-color: #e86a477a;
     text-decoration: underline;
 }
 
@@ -352,22 +354,18 @@ footer
 
 .gallery
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
 .polaroid {
-    padding-inline: auto;
     background-color: whitesmoke;
     background-image: url("../media/images/stripe.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
-    width: 18rem;
     aspect-ratio: 8 / 10;
-    margin: 1rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -379,10 +377,7 @@ footer
 .polaroid p {
     font-size: 1.75rem;
     font-weight: bold;
-    margin-top: 0.5rem;
-}
-.polaroid img onclick {
-    zoom: 50%;
+    margin-top: 3.5%;
 }
 
 .scrollspyNav
@@ -469,6 +464,17 @@ footer
     .inner-container 
     {
         padding: 1rem;
+    }
+
+    .gallery
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .polaroid p
+    {
+        margin-top: 1%;
+        font-size: 0.9rem;
     }
 
 }
