@@ -2,10 +2,14 @@ import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import TwitterIcon from './media/images/icons/twitter.svg';
 import GitHubIcon from './media/images/icons/github.svg';
 import AndMyRookPreview from './media/images/home/andmyrook-preview.png';
+import LegoIndyPuzzlePreview from './media/images/home/legoindypuzzle-preview.png';
+import MCPetListPreview from './media/images/home/mcpetlist-preview.png';
 import VoiidOSPreview from './media/images/home/voiidos-preview.png';
 import VOIIDPackPreview from './media/images/home/voiidpack-preview.png';
 
 import './css/main.css';
+import './css/home.css';
+
 import Navbar from "./routes/partial/Navbar";
 import Footer from "./routes/partial/Footer";
 import VOIIDPack from "./routes/projects/VOIIDPack";
@@ -64,25 +68,53 @@ function Home() {
         <h1>Projects</h1>
         <section className="inner-container">
         <p>You can find my most popular projects on this site, such as my Resource Pack <Link to="/projects/voiidpack">VOIIDPack</Link> and my Chess-like game <Link to="/projects/andmyrook">And My Rook!</Link></p>
-        <div style={{display:"flex",flex:"1",gap:"1rem"}}>
-          <Link to="/projects/andmyrook.js" style={{backgroundColor:"transparent"}}>
-            <div className="container outer-container">
-              <img src={AndMyRookPreview} alt="And My Rook Preview" width="100%"/>
-              <h2 style={{color:"var(--text-color)"}}>And My Rook!</h2>
+        <div className="projects-grid">
+          <Link to="/projects/andmyrook" style={{backgroundColor:"transparent"}}>
+            <div className="container container-beige no-m no-p" style={{padding:"1rem"}} >
+              <div>
+                <img src={AndMyRookPreview} alt="And My Rook Preview" width="100%"/>
+              </div>
+              <h2>And My Rook!</h2>
               <p>My Chess-like game about leveling up your Chess pieces.</p>
             </div>
           </Link>
-          <Link to="/projects/voiidos.js" style={{backgroundColor:"transparent"}}>
-            <div className="container outer-container">
-              <img src={VoiidOSPreview} alt="VoiidOS Preview" width="100%"/>
-              <h2 style={{color:"var(--text-color)"}}>VoiidOS</h2>
+
+          <Link to="/projects/legoindypuzzle" style={{backgroundColor:"transparent"}}>
+            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+              <div>
+                <img src={LegoIndyPuzzlePreview} alt="Lego Indy Puzzle Preview" width="100%"/>
+              </div>
+              <h2>LEGO Indy Puzzle</h2>
+              <p>A recreation of the LEGO Indiana Jones Hieroglyphics puzzle.</p>
+            </div>
+          </Link>
+
+          <Link to="/projects/mcpetlist" style={{backgroundColor:"transparent"}}>
+            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+              <div>
+                <img src={MCPetListPreview} alt="MCPetList Preview" width="100%"/>
+              </div>
+              <h2>MCPetList</h2>
+              <p>A program to categorise your Minecraft pets.</p>
+            </div>
+          </Link>
+
+          <Link to="/projects/voiidos" style={{backgroundColor:"transparent"}}>
+            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+              <div>
+                <img src={VoiidOSPreview} alt="VoiidOS Preview" width="100%"/>
+              </div>
+              <h2>VoiidOS</h2>
               <p>My CLI style "OS".</p>
             </div>
           </Link>
-          <Link to="/projects/voiidpack.js" style={{backgroundColor:"transparent"}}>
-            <div className="container outer-container">
-              <img src={VOIIDPackPreview} alt="VOIIDPack Preview" width="100%"/>
-              <h2 style={{color:"var(--text-color)"}}>VOIIDPack</h2>
+
+          <Link to="/projects/voiidpack" style={{backgroundColor:"transparent"}}>
+            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+              <div>
+                <img src={VOIIDPackPreview} alt="VOIIDPack Preview" width="100%"/>
+              </div>
+              <h2>VOIIDPack</h2>
               <p>My Minecraft Resource Pack</p>
             </div>
           </Link>

@@ -1,4 +1,5 @@
 import Tilt from "react-vanilla-tilt";
+import '../css/photography.css';
 import CameraPic from "../media/images/camera.jpg"
 
 const images = require.context("../media/images/gallery", false)
@@ -14,7 +15,7 @@ function Photography(){
         	<h1>Photography</h1>
 		</div>
 		<article>
-			<section className="column-layout container">
+			<section className="photography-intro container">
 				<div>
 					<img className="rounded" src={CameraPic} width="100%" alt="My father's Canon EOS550D"/>
 				</div>

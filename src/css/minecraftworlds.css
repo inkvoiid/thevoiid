@@ -1,0 +1,38 @@
+.scrollspyNav
+{
+    position: fixed;
+    left: 2.5vw;
+    z-index: 1;
+}
+
+.scrollspyNav a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.scrollspyNav a:hover
+{
+    text-decoration: underline;
+}
+
+.active-scroll-spy
+{
+    color: yellowgreen;
+}
+
+
+.mcworldcontainer
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex: 1;
+}
+
+@media screen and (max-width: 600px)
+{
+    .scrollspyNav
+    {
+        display: none;
+    }
+}

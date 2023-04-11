@@ -1,6 +1,7 @@
 import ScrollSpy from "react-ui-scrollspy";
 import '@splidejs/react-splide/css';
 import Panorama from "./partial/Panorama";
+import "../css/minecraftworlds.css"
 import DamonBase from "../media/images/minecraftworlds/panoramas/damonskybase.jpg";
 import ZachHouse from "../media/images/minecraftworlds/panoramas/zachhouse.jpg";
 
