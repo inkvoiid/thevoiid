@@ -47,7 +47,7 @@ function Navbar(){
 			<NavLink activeClassName="active" to="/" id='navtitle' onClick={() => setMobileNavExpanded(false)}>the voiid.</NavLink>
 			<p id='splitter'>{" | "}</p>
 			<button id='hamburger' onClick={() => setMobileNavExpanded(!isMobileNavExpanded)}><img src={MenuIcon} alt="Menu"/></button>
-			<div id="navlinks" style={{display: isMobileNavExpanded ? "block" : "none"}}>
+			<div id="navlinks" style={{display: isMobileNavExpanded ? "inline" : "none"}}>
 				<div className="dropdown">
 				<button className={projectsActive ? "active" : ""} onClick={() => setOpen(!open)}>Projects <FontAwesomeIcon icon={faCaretDown} /></button>
 					{open ? (
