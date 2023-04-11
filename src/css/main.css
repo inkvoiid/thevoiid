@@ -258,6 +258,7 @@ nav a:hover, nav button:hover
     display: grid;
     gap: 1rem;
     padding-inline: 1rem;
+    grid-template-columns: 1fr 2fr;
 }
 
 @media screen and (min-width: 600px)
@@ -356,7 +357,7 @@ footer
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .polaroid {
@@ -376,6 +377,11 @@ footer
 }
 .polaroid p {
     font-size: 1.75rem;
+    margin-inline: auto;
+    max-width:17ch;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
     font-weight: bold;
     margin-top: 3.5%;
 }
@@ -466,15 +472,21 @@ footer
         padding: 1rem;
     }
 
+    .column-layout
+    {
+        grid-template-columns: 1fr;
+    }
+
     .gallery
     {
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 
     .polaroid p
     {
         margin-top: 1%;
-        font-size: 0.9rem;
+        font-size: smaller;
     }
 
 }

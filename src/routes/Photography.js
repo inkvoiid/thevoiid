@@ -1,11 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import tiltJquery from "tilt.js";
-import VanillaTilt from "vanilla-tilt";
+import Tilt from "react-vanilla-tilt";
 import CameraPic from "../media/images/camera.jpg"
 
 const images = require.context("../media/images/gallery", false)
 
 const imagePaths = images.keys();
+
+
 
 function Photography(){
 	return (
@@ -30,10 +30,14 @@ function Photography(){
 			</section>
 			<section className="gallery">	
 				{imagePaths.map((path, index) => (
-				<div data-tilt key={images(path)} className="polaroid">
-					<img src={images(path)} alt={images(path)}/>
-					<p>{images.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}</p>
-				</div>))}
+				<Tilt max="25" glare="true" max-glare="1" glare-prerender="true" style={{}} className="polaroid">
+						<img src={images(path)} alt={images(path)}/>
+						<p style={{zIndex:"20"}}>
+							{images.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}
+						</p>
+					
+				</Tilt>
+				))}
 			</section>
 
 			<section id="Baking" className="container">
