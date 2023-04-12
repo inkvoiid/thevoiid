@@ -59,7 +59,7 @@
 {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .projects-grid div
@@ -81,7 +81,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.projects-grid div img:hover
+.projects-grid div:hover ~ .projects-grid div img
 {
     transform: scale(1.2);
     transform-origin: center;

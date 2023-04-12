@@ -19,7 +19,7 @@ function Photography(){
 				<div>
 					<img className="rounded" src={CameraPic} width="100%" alt="My father's Canon EOS550D"/>
 				</div>
-				<div className="left">
+				<div className="left" style={{paddingInline:"2%"}}>
 					<p>I garnered a passion in photography when I opted to take it as a subject in high school in 2019. Most, if not all of these photos have been taken on my father's Canon EOS550D.</p>
 					<p>The photography classes taught me all about aperture, shutter speed, leading lines and the rule of thirds. You may be able to tell I like to do some digital manipulation.</p>
 					<p>Take a look at <a href="#Gallery">some snaps I've done in my lifetime</a>, some <a href="#Baking">photos of my baking</a>, or <a href="#Japan">my dad's photos from Japan</a>.</p>

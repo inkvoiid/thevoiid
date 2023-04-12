@@ -70,7 +70,7 @@ function Home() {
         <p>You can find my most popular projects on this site, such as my Resource Pack <Link to="/projects/voiidpack">VOIIDPack</Link> and my Chess-like game <Link to="/projects/andmyrook">And My Rook!</Link></p>
         <div className="projects-grid">
           <Link to="/projects/andmyrook" style={{backgroundColor:"transparent"}}>
-            <div className="container container-beige no-m no-p" style={{padding:"1rem"}} >
+            <div className="container container-green no-m no-p" style={{padding:"1rem"}} >
               <div>
                 <img src={AndMyRookPreview} alt="And My Rook Preview" width="100%"/>
               </div>
@@ -80,7 +80,7 @@ function Home() {
           </Link>
 
           <Link to="/projects/legoindypuzzle" style={{backgroundColor:"transparent"}}>
-            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+            <div className="container container-green no-m no-p" style={{padding:"1rem"}}>
               <div>
                 <img src={LegoIndyPuzzlePreview} alt="Lego Indy Puzzle Preview" width="100%"/>
               </div>
@@ -90,7 +90,7 @@ function Home() {
           </Link>
 
           <Link to="/projects/mcpetlist" style={{backgroundColor:"transparent"}}>
-            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+            <div className="container container-green no-m no-p" style={{padding:"1rem"}}>
               <div>
                 <img src={MCPetListPreview} alt="MCPetList Preview" width="100%"/>
               </div>
@@ -100,7 +100,7 @@ function Home() {
           </Link>
 
           <Link to="/projects/voiidos" style={{backgroundColor:"transparent"}}>
-            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+            <div className="container container-green no-m no-p" style={{padding:"1rem"}}>
               <div>
                 <img src={VoiidOSPreview} alt="VoiidOS Preview" width="100%"/>
               </div>
@@ -110,7 +110,7 @@ function Home() {
           </Link>
 
           <Link to="/projects/voiidpack" style={{backgroundColor:"transparent"}}>
-            <div className="container container-beige no-m no-p" style={{padding:"1rem"}}>
+            <div className="container container-green no-m no-p" style={{padding:"1rem"}}>
               <div>
                 <img src={VOIIDPackPreview} alt="VOIIDPack Preview" width="100%"/>
               </div>
