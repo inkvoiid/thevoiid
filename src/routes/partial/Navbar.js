@@ -7,11 +7,27 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar(){
 	const [open, setOpen] = useState(false);
-	const [isMobileNavExpanded, setMobileNavExpanded] = useState(false);
+	const [isMobileNavExpanded, setMobileNavExpanded] = useState(true);
 	const dropdownRef = useRef(null);
 	const location = useLocation();
 	const projectsActive = location.pathname.includes('/projects/');
 	
+	useEffect(() => {
+		function handleResize() {
+			if (window.innerWidth > 768) {
+				setMobileNavExpanded(true);
+			} else {
+				setMobileNavExpanded(false);
+			}
+		}
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
 	useEffect(() => {
 		function handleClickOutside(event) {
 		  if(document.getElementById("hamburger").style.display === "none"){
