@@ -30,7 +30,7 @@ function Navbar(){
 
 	useEffect(() => {
 		function handleClickOutside(event) {
-		  if(document.getElementById("hamburger").style.display === "none"){
+		  if((window.innerWidth <= 600)){
 			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
 				setOpen(false);
 			  }
@@ -52,7 +52,7 @@ function Navbar(){
 
   function closeDropdownAndTryCloseMobileNav() {
 	setOpen(false);
-	if(document.getElementById("hamburger").style.display !== "none"){
+	if((window.innerWidth <= 600)){
 		setMobileNavExpanded(false);
 	}
 }
@@ -60,7 +60,7 @@ function Navbar(){
     return (
     <header id="nav">
 		<nav>
-			<NavLink activeClassName="active" to="/" id='navtitle' onClick={() => setMobileNavExpanded(false)}>the voiid.</NavLink>
+			<NavLink activeClassName="active" to="/" id='navtitle' onClick={() => closeDropdownAndTryCloseMobileNav()}>the voiid.</NavLink>
 			<p id='splitter'>{" | "}</p>
 			<button id='hamburger' onClick={() => setMobileNavExpanded(!isMobileNavExpanded)}><img src={MenuIcon} alt="Menu"/></button>
 			<div id="navlinks" style={{display: isMobileNavExpanded ? "inline" : "none"}}>
@@ -74,10 +74,10 @@ function Navbar(){
 					</div>
 					) : null}
 				</div>
-				<NavLink activeClassName="active" to="/photography" onClick={() => setMobileNavExpanded(false)}>Photography</NavLink>
-				<NavLink activeClassName="active" to="/minecraftworlds" onClick={() => setMobileNavExpanded(false)}>Minecraft Worlds</NavLink>
-				<NavLink activeClassName="active" to="/music" onClick={() => setMobileNavExpanded(false)}>Music</NavLink>
-				<NavLink activeClassName="active" to="/about" onClick={() => setMobileNavExpanded(false)}>About Me</NavLink>
+				<NavLink activeClassName="active" to="/photography" onClick={() => closeDropdownAndTryCloseMobileNav()}>Photography</NavLink>
+				<NavLink activeClassName="active" to="/minecraftworlds" onClick={() => closeDropdownAndTryCloseMobileNav()}>Minecraft Worlds</NavLink>
+				<NavLink activeClassName="active" to="/music" onClick={() => closeDropdownAndTryCloseMobileNav()}>Music</NavLink>
+				<NavLink activeClassName="active" to="/about" onClick={() => closeDropdownAndTryCloseMobileNav()}>About Me</NavLink>
 			</div>
 		</nav>
 		{/* <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/inkvoiid?ref_src=twsrc%5Etfw">Tweets by inkvoiid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
