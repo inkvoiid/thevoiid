@@ -7,14 +7,14 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar(){
 	const [open, setOpen] = useState(false);
-	const [isMobileNavExpanded, setMobileNavExpanded] = useState(true);
+	const [isMobileNavExpanded, setMobileNavExpanded] = useState(window.innerWidth > 600);
 	const dropdownRef = useRef(null);
 	const location = useLocation();
 	const projectsActive = location.pathname.includes('/projects/');
 	
 	useEffect(() => {
 		function handleResize() {
-			if (window.innerWidth > 768) {
+			if (window.innerWidth > 600) {
 				setMobileNavExpanded(true);
 			} else {
 				setMobileNavExpanded(false);
