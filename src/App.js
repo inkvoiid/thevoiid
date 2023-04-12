@@ -15,6 +15,7 @@ import Footer from "./routes/partial/Footer";
 import VOIIDPack from "./routes/projects/VOIIDPack";
 import Photography from "./routes/Photography";
 import Music from "./routes/Music";
+import About from "./routes/About";
 import VoiidOS from "./routes/projects/VoiidOS";
 import MinecraftWorlds from "./routes/MinecraftWorlds";
 import PageNotFound from "./routes/PageNotFound";
@@ -34,6 +35,7 @@ function App()
           <Route path="/Photography" element={<Photography />} />
           <Route path="/MinecraftWorlds" element={<MinecraftWorlds />} />
           <Route path="/Music" element={<Music />} />
+          <Route path="/About" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
@@ -123,10 +125,18 @@ function Home() {
         </section>
       </article>
       <article className="container">
-        <br></br>
-      </article>
-      <article className="container" style={{backgroundColor: "#5FB4D1"}}>
-        <br></br>
+        <h1>How this site was made.</h1>
+        <h3>You wouldn't be seeing this site if it weren't for these technologies:</h3>
+        <div className="left">
+        <h2>React</h2>
+        <p>It's a Javascript framework which allows me to split areas of my site in modules, make the navigation seem instantanious and import Node.js packages for me to utilise on this site.</p>
+
+        <h2>GitHub</h2>
+        <p>It allows me to push my code to an online repository, where all the changes are staged, the code can be viewed by people, the repo can be forked by someone and if I ever wanted to, I could let multiple people push to it.</p>
+        
+        <h2>Netlify</h2>
+        <p>It's a such a great site for deploying sites. I've been using it since like 2017 when it was called BitBalloon and I would zip up my HTML site and upload it on there to deploy new changes. Nowadays, I have deploys linked to a GitHub repo, so any time it gets a new push, Netlify builds the latest update.</p>
+        </div>
       </article>
       <article className="container" style={{backgroundColor: "whitesmoke"}}>
         <h1>Bugger it</h1>

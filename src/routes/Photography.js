@@ -2,11 +2,14 @@ import Tilt from "react-vanilla-tilt";
 import '../css/photography.css';
 import CameraPic from "../media/images/camera.jpg"
 
-const images = require.context("../media/images/gallery", false)
+const mainImagesPath = require.context("../media/images/gallery", false)
+const mainImages = mainImagesPath.keys();
 
-const imagePaths = images.keys();
+const bakingImagesPath = require.context("../media/images/gallery/baking", false)
+const bakingImages = bakingImagesPath.keys();
 
-
+const japanImagesPath = require.context("../media/images/gallery/japan", false)
+const japanImages = japanImagesPath.keys();
 
 function Photography(){
 	return (
@@ -30,29 +33,42 @@ function Photography(){
 				<h1>Gallery</h1>
 			</section>
 			<section className="gallery">	
-				{imagePaths.map((path, index) => (
+				{mainImages.map((path, index) => (
 				<Tilt max="25" glare="true" max-glare="1" glare-prerender="true" style={{}} className="polaroid">
-						<img src={images(path)} alt={images(path)}/>
+						<img src={mainImagesPath(path)} alt={mainImagesPath(path)}/>
 						<p style={{zIndex:"20"}}>
-							{images.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}
+							{mainImagesPath.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}
 						</p>
-					
 				</Tilt>
 				))}
 			</section>
 
 			<section id="Baking" className="container">
 				<h1>Baking Photos</h1>
-				<div className="inner-container">
-					<p>Coming soon...</p>
-				</div>
+			</section>
+			<section className="gallery">
+				{bakingImages.map((path, index) => (
+				<Tilt max="25" glare="true" max-glare="1" glare-prerender="true" style={{}} className="polaroid">
+						<img src={bakingImagesPath(path)} alt={bakingImagesPath(path)}/>
+						<p style={{zIndex:"20"}}>
+							{bakingImagesPath.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}
+						</p>
+				</Tilt>
+				))}
 			</section>
 
 			<section id="Japan" className="container">
-				<h1>Dad's Photos from Japan</h1>
-				<div className="inner-container">
-					<p>Coming soon...</p>
-				</div>
+				<h1>Dad's Japan Trip</h1>
+			</section>
+			<section className="gallery">
+				{japanImages.map((path, index) => (
+				<Tilt max="25" glare="true" max-glare="1" glare-prerender="true" style={{}} className="polaroid">
+						<img src={japanImagesPath(path)} alt={japanImagesPath(path)}/>
+						<p style={{zIndex:"20"}}>
+							{japanImagesPath.keys()[index].split('/').pop().replace(/\.[^/.]+$/, "")}
+						</p>
+				</Tilt>
+				))}
 			</section>
 		</article>
 	</main>

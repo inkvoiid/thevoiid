@@ -26,11 +26,11 @@ function MinecraftWorlds(){
         	<h1>Minecraft Worlds</h1>
 		</div>
 
-		<div className="container">
-		<p>
-			View some of the Minecraft server worlds I've catalogued. Who knows? Perhaps you might have taken part in some of them.
-		</p>
-		</div>
+		<section className="container">
+			<p>View some of the Minecraft server worlds I've catalogued. Who knows? Perhaps you might have taken part in some of them.</p>
+			<h2>Filters</h2>
+			<p><span>DumbleDog_</span> <span>inkvoiid</span> <span>WispyDutchess</span></p>
+		</section>
 		<ScrollSpy>
 			<h1 id="mc2017" className="underline" style={{textAlign:"center",color:"white", textDecorationColor:"steelblue"}}>2017</h1>
 
@@ -40,19 +40,19 @@ function MinecraftWorlds(){
 
 			<h1 id="mc2020" style={{textAlign:"center",color:"white"}}>2020</h1>
 
-			<div className="container mcworldcontainer">
-				<div>
+			<article className="container mcworldcontainer">
+				<section>
 					
-				</div>
-				<div>
+				</section>
+				<section>
 					<h2>Parasite Server (August 2020)</h2>
 					<ul>
 						<li>Server Owner: inkvoiid</li>
 						<li>Date Started: August 2020</li>
 						<li>Date Ended: September 2020</li>
 					</ul>
-				</div>
-			</div>
+				</section>
+			</article>
 
 			<h1 id="mc2021" style={{textAlign:"center",color:"white"}}>2021</h1>
 
