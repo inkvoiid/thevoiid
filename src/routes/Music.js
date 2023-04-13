@@ -1,10 +1,4 @@
-import Coverflow from "./partial/Coverflow";
-
-const images = [
-	'https://www.thebeatles.com/sites/default/files/styles/max_1300x1300/public/2021-06/Please%20Please%20Me.jpg',
-	'https://www.thebeatles.com/sites/default/files/styles/max_1300x1300/public/2021-06/Please%20Please%20Me.jpg',
-	'https://www.thebeatles.com/sites/default/files/styles/max_1300x1300/public/2021-06/Please%20Please%20Me.jpg',
-  ];
+import RecordCollection from "./partial/RecordCollection";
 
 function Music(){
 	return (
@@ -23,11 +17,9 @@ function Music(){
 				<p>Your Mother Should Know - The Beatles</p>
 			</section>
 
-			<section id="Record-Collection" className="container container-green">
+			<section id="Record-Collection" className="container inner-container container-green">
 				<h1>Record Collection</h1>
-				<div className="inner-container">
-					<Coverflow images={images}></Coverflow>
-				</div>
+				<RecordCollection />
 			</section>
 
 			<section id="Music-Gear" className="container">
