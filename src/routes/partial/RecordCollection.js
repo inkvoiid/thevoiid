@@ -15,6 +15,7 @@ function RecordCollection() {
       const fetchData = async () => {
         const response = await axios.get(
           "https://api.discogs.com/users/inkvoiid/collection/folders/0/releases",
+          "https://api.discogs.com/users/inkvoiid/collection/folders/0/releases?per_page=250",
           {
             headers: {
                 Authorization: `Discogs key=${DISCOGS_API_KEY}, secret=${DISCOGS_API_SECRET}`,
