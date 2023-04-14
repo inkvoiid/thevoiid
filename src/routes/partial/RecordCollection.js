@@ -67,10 +67,14 @@ function RecordCollection() {
 
       // Sort the filtered collection by artist name and album name
       collection.sort((a, b) => {
-        if (a.artist < b.artist) {
+        // Remove "the" from the beginning of artist names
+        const artistA = a.artist.replace(/^the /i, '');
+        const artistB = b.artist.replace(/^the /i, '');
+      
+        if (artistA < artistB) {
           return -1;
         }
-        if (a.artist > b.artist) {
+        if (artistA > artistB) {
           return 1;
         }
         if (a.title < b.title) {
