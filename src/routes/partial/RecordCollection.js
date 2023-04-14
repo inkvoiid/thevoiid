@@ -31,8 +31,9 @@ function RecordCollection() {
               image: release.basic_information.thumb,
             };
             
-            if (album.artist.endsWith("(2)")) {
-              album.artist = album.artist.slice(0, -4);
+            const match = album.artist.match(/\(\d+\)$/);
+            if (match) {
+              album.artist = album.artist.slice(0, -match[0].length-1);
             }
     
             try {
