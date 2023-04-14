@@ -139,7 +139,8 @@ function RecordShelf({ data }) {
         <div className="record" key={album.id} style={{backgroundImage:`url(${album.image})`}}>
             <div className="record-info">
             <h2 className="title">{album.title}</h2>
-            <p className="artist year">{album.artist} ({album.year})</p>
+            <p className="artist year">{album.artist}{album.year !== 0 && ` (${album.year})`}</p>
+
             </div>
         </div>
       ))}
