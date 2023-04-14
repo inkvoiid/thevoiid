@@ -30,8 +30,10 @@ function RecordCollection() {
               year: release.basic_information.year,
               image: release.basic_information.thumb,
             };
-
-            if(album.artist === "Wings (2)") album.artist = "Wings";
+            
+            if (album.artist.endsWith("(2)")) {
+              album.artist = album.artist.slice(0, -4);
+            }
     
             try {
                 // Fetch album image from Last.fm API
@@ -87,6 +89,7 @@ function RecordCollection() {
         if (
           album.artist === "John Lennon" ||
           album.artist === "Paul McCartney" ||
+          album.artist === "Paul & Linda McCartney" ||
           album.artist === "George Harrison" ||
           album.artist === "Ringo Starr" ||
           album.artist === "The Beatles" ||

@@ -1,7 +1,7 @@
 .record-collection
 {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
     padding: 1rem 1rem 0 1rem;
@@ -82,14 +82,15 @@
 @media (hover) {
     .record
     {
-        width: 200px;
+        width: 20em;
         box-shadow: -5px 0 7.5px #00000068;
-        --record-gap: 8em;
+        --record-gap: 10em;
         transition: 0.25s ease-in-out;
     }
     .record:hover
     {
-        transform: translateY(-0.25rem);
+        transform: translateY(-0.15rem);
+        rotate: 1.5deg;
     }
 
     .record:hover~.record
@@ -123,6 +124,7 @@
         margin-inline: -1rem;
         padding: 1rem 1rem 0 1rem;
         gap: 1rem;
+        overflow: scroll;
     }
 
     .record
