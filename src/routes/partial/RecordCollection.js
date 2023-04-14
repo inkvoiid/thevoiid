@@ -28,7 +28,7 @@ function RecordCollection() {
               title: release.basic_information.title,
               artist: release.basic_information.artists[0].name,
               year: release.basic_information.year,
-              image: release.basic_information.thumb,
+              image: release.basic_information.cover_image,
             };
             
             const match = album.artist.match(/\(\d+\)$/);
@@ -55,7 +55,9 @@ function RecordCollection() {
               } catch (error) {
                 console.log("Error fetching last.fm album image for", album.title);
               }
-              if(album.image === "") album.image = NoCover;
+              if (!album.image || album.image.endsWith("spacer.gif")) {
+                album.image = NoCover;
+              }
     
             return album;
           }));
