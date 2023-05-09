@@ -1,7 +1,7 @@
 .record-collection
 {
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
     padding: 1rem 1rem 0 1rem;
