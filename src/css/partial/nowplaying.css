@@ -1,0 +1,74 @@
+.track
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    text-align: left;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 5px 5px 10px #00000025;
+    
+    background-color: #00000011;
+}
+
+.trackimages
+{
+    display: flex;
+}
+
+.trackcover
+{
+    position:relative;
+    margin: 0.5rem;
+    display: block;
+    box-shadow: 2px 2px 5px #00000050;
+    border-radius: 0.3rem;
+    z-index: 2;
+}
+
+.spinningrecord
+{
+    position:relative;
+    z-index: 1;
+    top: 12px;
+    left: -60px;
+    margin-right: -70px;
+
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.track:nth-child(even)
+{
+    background-color: white;
+}
+
+.nowplaying
+{
+    background-color: var(--brown);
+    color: white;
+}
+
+.trackinfo
+{
+    padding-inline: 1em;
+}
+
+.trackplaydate
+{
+    
+    font-size: 1rem;
+}
+
+.track .trackname
+{
+    font-weight: 500;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }}

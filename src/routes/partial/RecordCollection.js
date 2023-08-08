@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../css/recordcollection.css';
+import '../../css/partial/recordcollection.css';
 import NoCover from '../../media/images/nocover.png';
 
 const DISCOGS_API_KEY = process.env.REACT_APP_DISCOGS_API_KEY;

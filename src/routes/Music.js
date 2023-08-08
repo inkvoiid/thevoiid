@@ -1,3 +1,4 @@
+import NowPlaying from "./partial/NowPlaying";
 import RecordCollection from "./partial/RecordCollection";
 
 function Music(){
@@ -13,8 +14,7 @@ function Music(){
 			</section>
 
 			<section className="container">
-				<h1>What is inkvoiid listening to?</h1>
-				<p>Your Mother Should Know - The Beatles</p>
+				<NowPlaying />
 			</section>
 
 			<section id="Record-Collection" className="container inner-container container-green">

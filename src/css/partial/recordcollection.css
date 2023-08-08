@@ -38,6 +38,22 @@
     color: white;
 }
 
+.record .title a
+{
+    background-color: transparent;
+    color: white;
+    text-decoration:underline;
+    text-decoration-color: var(--peach);
+}
+
+.record .title a:hover
+{
+    background-color: transparent;
+    color: white;
+    text-decoration:underline;
+    
+}
+
 .record .artist, .record .year
 {
     color: gainsboro;
