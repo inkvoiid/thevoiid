@@ -138,7 +138,7 @@ function RecordShelf({ data }) {
       {data.map((album) => (
         <div className="record" key={album.id} style={{backgroundImage:`url(${album.image})`}}>
             <div className="record-info">
-            <h2 className="title">{album.title}</h2>
+            <h2 className="title"><a href=''>{album.title}</a></h2>
             <p className="artist year">{album.artist}{album.year !== 0 && ` (${album.year})`}</p>
 
             </div>
