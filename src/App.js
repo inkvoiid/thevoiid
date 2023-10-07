@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import AndMyRookPreview from "./media/images/home/andmyrook-preview.png";
 import LegoIndyPuzzlePreview from "./media/images/home/legoindypuzzle-preview.png";
 import MCPetListPreview from "./media/images/home/mcpetlist-preview.png";

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import MenuIcon from "../../media/images/icons/menu.svg";
 import "../../css/navbar.css";
@@ -7,7 +7,6 @@ function Navbar() {
   const [isMobileNavExpanded, setMobileNavExpanded] = useState(
     window.innerWidth > 600
   );
-  const dropdownRef = useRef(null);
 
   useEffect(() => {
     function handleResize() {
