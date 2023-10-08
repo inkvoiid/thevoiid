@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PageNotFound() {
   return (
     <main>
@@ -6,7 +8,9 @@ function PageNotFound() {
       </div>
       <div className="container">
         <p>Big unfortunate</p>
-        <a href="/">Back to home</a>
+        <Link to="/" className="button">
+          Back to home
+        </Link>
       </div>
     </main>
   );

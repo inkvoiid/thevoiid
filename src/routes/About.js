@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -21,9 +22,10 @@ function About() {
             development.
           </p>
           <p>
-            Some of my most proud work I've done would be my Angular recipe app,
-            my Star wars ejs site, which just looks nice, and my UWP app in the
-            style of a phone app for Moe's Bar.
+            Some of my most proud work I've done would be my{" "}
+            <Link>Angular recipe app</Link>, my{" "}
+            <Link to="">Star Wars EJS site</Link>, which just looks nice, and my
+            UWP app in the style of a <Link>phone app for Moe's Bar</Link>.
           </p>
         </section>
 

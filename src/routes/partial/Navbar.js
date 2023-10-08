@@ -35,7 +35,6 @@ function Navbar() {
       <nav>
         {/* Home */}
         <NavLink
-          activeClassName="g"
           to="/"
           id="navtitle"
           onClick={() => closeDropdownAndTryCloseMobileNav()}
@@ -54,12 +53,11 @@ function Navbar() {
         </button>
 
         <div
-          id="navlinks"
-          style={{ height: isMobileNavExpanded ? "100%" : "0%" }}
+          className={isMobileNavExpanded ? "navlinks" : "hiddenNav navlinks"}
         >
           {/* Photography */}
           <NavLink
-            activeClassName="active"
+            className={(nav) => (nav.isActive ? "active" : "")}
             to="/photography"
             onClick={() => closeDropdownAndTryCloseMobileNav()}
           >
@@ -68,7 +66,7 @@ function Navbar() {
 
           {/* Minecraft Worlds */}
           <NavLink
-            activeClassName="active"
+            className={(nav) => (nav.isActive ? "active" : "")}
             to="/minecraftworlds"
             onClick={() => closeDropdownAndTryCloseMobileNav()}
           >
@@ -77,7 +75,7 @@ function Navbar() {
 
           {/* Music */}
           <NavLink
-            activeClassName="active"
+            className={(nav) => (nav.isActive ? "active" : "")}
             to="/music"
             onClick={() => closeDropdownAndTryCloseMobileNav()}
           >
@@ -86,7 +84,7 @@ function Navbar() {
 
           {/* About Me */}
           <NavLink
-            activeClassName="active"
+            className={(nav) => (nav.isActive ? "active" : "")}
             to="/about"
             onClick={() => closeDropdownAndTryCloseMobileNav()}
           >

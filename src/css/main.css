@@ -16,6 +16,8 @@
   --paleforestgreen: #6f8583;
   --offwhite: #fffff2;
   --text-color: #232020;
+
+  --transparentbrown: #8d512ec8;
 }
 
 html {
@@ -76,12 +78,6 @@ h6 {
   margin: 1rem auto;
 }
 
-.active {
-  color: var(--peach);
-
-  text-decoration: underline;
-}
-
 .tabTitle {
   margin: 0;
   padding: 0;
@@ -119,45 +115,11 @@ h6 {
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.35);
 }
 
-.container-green {
-  background: var(--paleforestgreen);
-}
-
-.container-blue {
-  background: #82a6b1;
-}
-
-.container-brown {
-  background: var(--brown);
-}
-
-.container-beige {
-  background: var(--beige);
-}
-
-.container-green h1,
-.container-green h2,
-.container-brown h1,
-.container-brown h2 {
-  color: var(--offwhite);
-}
-
-.container-beige h1,
-.container-beige h2 {
-  color: var(--brown);
-}
-
-.container-green > p,
-.container-blue > p,
-.container-brown > p {
-  color: white;
-}
-
 .left p {
   text-align: left;
 }
 
-.container a:not(table a, table i) {
+.container a:not(table a, table i, .button) {
   text-decoration: none;
   background-color: #ff987c7a;
   color: #181818;
@@ -165,7 +127,7 @@ h6 {
   line-height: 1.5rem;
 }
 
-.container a:hover:not(table a, table i) {
+.container a:hover:not(table a, table i, .button) {
   background-color: #e86a477a;
   text-decoration: underline;
 }
@@ -176,8 +138,8 @@ h6 {
   border-radius: 10px;
   margin: 1rem;
   display: inline-block;
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
   font-weight: 700;
   font-size: 1.25rem;
   -webkit-backdrop-filter: blur(5px);
@@ -235,9 +197,44 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 1rem 5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
   background-color: #181818;
   color: var(--offwhite);
+}
+
+.container-green {
+  background: var(--paleforestgreen);
+}
+
+.container-blue {
+  background: #82a6b1;
+}
+
+.container-brown {
+  background: var(--brown);
+}
+
+.container-beige {
+  background: var(--beige);
+}
+
+.container-green h1,
+.container-green h2,
+.container-brown h1,
+.container-brown h2 {
+  color: var(--offwhite);
+}
+
+.container-beige h1,
+.container-beige h2 {
+  color: var(--brown);
+}
+
+.container-green > p,
+.container-blue > p,
+.container-brown > p {
+  color: white;
 }
 
 @media (hover) {
@@ -248,6 +245,14 @@ footer {
   .button:hover {
     background-color: #e7c1c161;
   }
+
+  .container .button:hover {
+    background-color: var(--transparentbrown);
+  }
+}
+
+.container .button {
+  background-color: var(--brown);
 }
 
 @media screen and (max-width: 600px) {
@@ -286,4 +291,38 @@ footer {
     scroll-behavior: auto !important;
     transition-delay: 0ms !important;
   }
+}
+
+.container-green {
+  background: var(--paleforestgreen);
+}
+
+.container-blue {
+  background: #82a6b1;
+}
+
+.container-brown {
+  background: var(--brown);
+}
+
+.container-beige {
+  background: var(--beige);
+}
+
+.container-green h1,
+.container-green h2,
+.container-brown h1,
+.container-brown h2 {
+  color: var(--offwhite);
+}
+
+.container-beige h1,
+.container-beige h2 {
+  color: var(--brown);
+}
+
+.container-green > p,
+.container-blue > p,
+.container-brown > p {
+  color: white;
 }

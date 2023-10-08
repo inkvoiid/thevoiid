@@ -2,8 +2,12 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import AndMyRookPreview from "./media/images/home/andmyrook-preview.png";
+import ClientServerPreview from "./media/images/home/clientserver-preview.png";
 import LegoIndyPuzzlePreview from "./media/images/home/legoindypuzzle-preview.png";
 import MCPetListPreview from "./media/images/home/mcpetlist-preview.png";
+import MOEBILEPreview from "./media/images/home/moebile-preview.png";
+import OurKitchenPreview from "./media/images/home/ourkitchen-preview.png";
+import StarWarsPreview from "./media/images/home/starwars-preview.png";
 import VoiidOSPreview from "./media/images/home/voiidos-preview.png";
 import VOIIDPackPreview from "./media/images/home/voiidpack-preview.png";
 
@@ -20,6 +24,7 @@ import VoiidOS from "./routes/projects/VoiidOS";
 import MinecraftWorlds from "./routes/MinecraftWorlds";
 import PageNotFound from "./routes/PageNotFound";
 import AndMyRook from "./routes/projects/AndMyRook";
+import ProjectPreview from "./routes/partial/ProjectPreview";
 
 function App() {
   return (
@@ -95,101 +100,96 @@ function Home() {
             Resource Pack <Link to="/projects/voiidpack">VOIIDPack</Link> and my
             Chess-like game <Link to="/projects/andmyrook">And My Rook!</Link>
           </p>
+          <p>Note: Projects marked with a ⚠️ don't have a page yet.</p>
           <div className="projects-grid">
-            <Link
-              to="/projects/andmyrook"
-              className="project-preview"
-              style={{ backgroundColor: "transparent" }}
-            >
-              <div>
-                <img
-                  src={AndMyRookPreview}
-                  alt="And My Rook Preview"
-                  width="100%"
-                />
-              </div>
-              <h2>And My Rook!</h2>
-              <p>My Chess-like game about leveling up your Chess pieces.</p>
-            </Link>
+            <ProjectPreview
+              url={"/projects/andmyrook"}
+              image={AndMyRookPreview}
+              title={"And My Rook!"}
+              description={
+                "My Chess-like game about leveling up your Chess pieces."
+              }
+            />
 
-            <Link
-              to="/projects/legoindypuzzle"
-              className="project-preview"
-              style={{ backgroundColor: "transparent" }}
-            >
-              <div>
-                <img
-                  src={LegoIndyPuzzlePreview}
-                  alt="Lego Indy Puzzle Preview"
-                  width="100%"
-                />
-              </div>
-              <h2>LEGO Indy Puzzle</h2>
-              <p>
-                A recreation of the LEGO Indiana Jones Hieroglyphics puzzle.
-              </p>
-            </Link>
+            <ProjectPreview
+              url={"/"}
+              image={ClientServerPreview}
+              title={"⚠️Client Server Web Development Site"}
+              description={
+                "A site that explores single page apps and javascript frameworks."
+              }
+            />
 
-            <Link
-              to="/projects/mcpetlist"
-              className="project-preview"
-              style={{ backgroundColor: "transparent" }}
-            >
-              <div>
-                <img
-                  src={MCPetListPreview}
-                  alt="MCPetList Preview"
-                  width="100%"
-                />
-              </div>
-              <h2>MCPetList</h2>
-              <p>A program to categorise your Minecraft pets.</p>
-            </Link>
+            <ProjectPreview
+              url={"/"}
+              image={LegoIndyPuzzlePreview}
+              title={"⚠️LEGO Indy Puzzle"}
+              description={
+                "A recreation of the LEGO Indiana Jones Hieroglyphics puzzle."
+              }
+            />
 
-            <Link
-              to="/projects/voiidos"
-              className="project-preview"
-              style={{ backgroundColor: "transparent" }}
-            >
-              <div>
-                <img src={VoiidOSPreview} alt="VoiidOS Preview" width="100%" />
-              </div>
-              <h2>VoiidOS</h2>
-              <p>My CLI style "OS".</p>
-            </Link>
+            <ProjectPreview
+              url={"/"}
+              image={MCPetListPreview}
+              title={"⚠️MCPetList"}
+              description={"A program to categorise your Minecraft pets."}
+            />
 
-            <Link
-              to="/projects/voiidpack"
-              className="project-preview"
-              style={{ backgroundColor: "transparent" }}
-            >
-              <div>
-                <img
-                  src={VOIIDPackPreview}
-                  alt="VOIIDPack Preview"
-                  width="100%"
-                />
-              </div>
-              <h2>VOIIDPack</h2>
-              <p>My Minecraft Resource Pack</p>
-            </Link>
+            <ProjectPreview
+              url={"/"}
+              image={MOEBILEPreview}
+              title={"⚠️MOEBILE"}
+              description={"A mock phone app for Moe's Bar."}
+            />
+
+            <ProjectPreview
+              url={"/"}
+              image={OurKitchenPreview}
+              title={"⚠️Our Kitchen"}
+              description={"A web app to upload and view family recipes."}
+            />
+
+            <ProjectPreview
+              url={"/"}
+              image={StarWarsPreview}
+              title={"⚠️Star Wars Movie Site"}
+              description={
+                "A dynamic site that displays info about the Star Wars movies."
+              }
+            />
+
+            <ProjectPreview
+              url={"/projects/voiidos"}
+              image={VoiidOSPreview}
+              title={"VoiidOS"}
+              description={'My CLI style "OS".'}
+            />
+
+            <ProjectPreview
+              url={"/projects/voiidpack"}
+              image={VOIIDPackPreview}
+              title={"VOIIDPack"}
+              description={"My Minecraft Resource Pack"}
+            />
           </div>
         </section>
       </article>
+
       <article className="container">
         <h1>How this site was made.</h1>
-        <h3>
+        <p>
           You wouldn't be seeing this site if it weren't for these technologies:
-        </h3>
+        </p>
         <div className="left">
-          <h2>React</h2>
+          <h3>React</h3>
           <p>
             It's a Javascript framework which allows me to split areas of my
             site in modules, make the navigation seem instantanious and import
             Node.js packages for me to utilise on this site.
           </p>
 
-          <h2>GitHub</h2>
+          <h3>GitHub</h3>
           <p>
             It allows me to push my code to an online repository, where all the
             changes are staged, the code can be viewed by people, the repo can
@@ -197,7 +197,7 @@ function Home() {
             people push to it.
           </p>
 
-          <h2>Netlify</h2>
+          <h3>Netlify</h3>
           <p>
             It's a such a great site for deploying sites. I've been using it
             since like 2017 when it was called BitBalloon and I would zip up my
