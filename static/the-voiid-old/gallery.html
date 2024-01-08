@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="inkvoiid's photo gallery.">
+	<meta name="keywords" content="inkvoiid,the voiid">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="inkvoiid">
+	<title>Photography Gallery - The Voiid.</title>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<style>
+		@font-face {
+			font-family: RioAndMa;
+			src: url("media/rioandma.otf");
+		}
+		html {
+			background-color: #000b0d;
+			background-image: url("media/backgrounds/space.jpg");
+		}
+		.paper {
+			padding: 2px;
+			color: #111111;
+			background-color: #F3F3F3;
+			background-image: url("media/photography/stripe.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-bottom: 50px;
+			padding-bottom: 10px;
+			width: 8cm;
+			height: auto;
+			float: left;
+			box-shadow: 5px 5px 10px black;
+		}
+		.paper img {
+			max-width: 90%;
+			max-height: 85%;
+			align-self: center;
+			padding-top: 15px;
+		}
+		.paper p {
+			font-family: RioAndMa;
+			font-size: 32px;
+			font-weight: bold;
+			font-style: italic;
+		}
+		.paper img onclick {
+			zoom: 50%;
+		}
+			
+		.external {
+			font-size: 16px;
+			color: #1B4484;
+		}
+		.websitebody::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+	</style>
+</head>
+
+<!-- u are big gay -->
+
+<body>
+<br>
+<!--Nav Bar-->
+<ul id="navibar">
+  <li><a href="index.html"><img src="thevoiid.png" height="28px" alt="Home"></a></li>
+  <li><a href="gallery.html">Photography Gallery</a></li>
+  <li style="float: right"><a href="https://discord.gg/zbwnPK4" target="_blank"><i class="fab fa-discord"></i></a></li>
+  <li style="float: right"><a href="https://twitter.com/inkvoiid" target="_blank"><i class="fab fa-twitter"></i></a></li>
+  <li style="float: right"><img src="http://www.cutercounter.com/hits.php?id=grroqpfq&nd=6&style=80" border="0" alt="visitor counter"></li>
+</ul>
+
+<br>
+
+<img src="media/photography/banner.jpg" width="100%" alt="Photo Gallery"> <br>
+
+<br>
+
+<!--Body (uses clearfix hack)-->
+<div class="websitebody">
+  <div data-tilt class="paper"> <img src="media/photography/corner.jpg" alt="Road Corner">
+    <p>Round the bend <a class="external" href="media/photography/corner.jpg" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+  <div data-tilt class="paper"> <img src="media/photography/compressed/macro-compressor.jpg" alt="Close up of plant branch">
+    <p>Close up of plant <a class="external" href="media/photography/macro.JPG" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+  <div data-tilt class="paper"> <img src="media/photography/compressed/sunflowers-compressor.jpg" alt="Sunflowers at dusk">
+    <p>Sunflowers at dusk <a class="external" href="media/photography/sunflowers.JPG" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+  <div data-tilt class="paper"> <img src="media/photography/compressed/ollie-compressor.jpg" alt="Ollie the cat">
+    <p>Ollie <a class="external" href="media/photography/ollie.JPG" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+  <div data-tilt class="paper"> <img src="media/photography/compressed/guitar-compressor.jpg" alt="Acoustic guitar">
+    <p>My guitar <a class="external" href="media/photography/guitar.jpg" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+</div>
+
+<!--Footer-->
+<footer>
+	<p style="text-align: center;"><img src="media/inkvoiid.png" style="width: 6cm;" alt="inkvoiid"><br>© 2019 inkvoiid</p>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> 
+</footer></div>
+</body>
+</html>

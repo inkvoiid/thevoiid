@@ -1,0 +1,53 @@
+{
+    "data":
+    [
+        {
+            "version": "VO12DPack V0.2",
+            "mcversion": "1.12",
+            "releasedate": "23/11/2018",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/515415895946952705/VO12DPack_V0.2.zip"
+        },
+        {
+            "version": "VO12DPack V0.4",
+            "mcversion": "1.12",
+            "releasedate": "03/12/2018",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/518982861672677386/VO12DPack_V0.4.zip"
+        },
+        {
+            "version": "VO12DPack V1.0",
+            "mcversion": "1.12",
+            "releasedate": "08/02/2019",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/543354867054280705/VOIIDPACK_1.12_V1.0.zip"
+        },
+        {
+            "version": "VOIIDPack V0.1",
+            "mcversion": "1.13/1.14",
+            "releasedate": "03/08/2018",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/474804623174270986/VOIIDPack_V0.1.zip"
+        },
+        {
+            "version": "VOIIDPack V0.2",
+            "mcversion": "1.13/1.14",
+            "releasedate": "07/09/2018",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/487486291995262977/VOIIDPack_V0.2.zip"
+        },
+        {
+            "version": "VOIIDPack V0.3",
+            "mcversion": "1.13/1.14",
+            "releasedate": "19/10/2018",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/502765017511231508/VOIIDPack_V0.3.zip"
+        },
+        {
+            "version": "VOIIDPack V1.0",
+            "mcversion": "1.13/1.14",
+            "releasedate": "10/01/2019",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/532518986743545856/VOIIDPack_V1.0.zip"
+        },
+        {
+            "version": "VOIIDPack V2.0",
+            "mcversion": "1.19",
+            "releasedate": "07/04/2023",
+            "url": "https://cdn.discordapp.com/attachments/474803363335372822/1093565242828664883/VOIIDPack_v2.0.zip"
+        }
+    ]
+}
