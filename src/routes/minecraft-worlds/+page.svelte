@@ -51,7 +51,8 @@
 		background-color: #fff;
 		padding: 0.25rem;
 		padding-bottom: 0.5rem;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
+		box-shadow: 0.25rem 0.25rem 1.5rem 0 rgba(0, 0, 0, 0.35);
 		position: fixed;
 		margin-top: 2rem;
 		margin-inline: 3%;

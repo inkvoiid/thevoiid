@@ -42,16 +42,16 @@
 		</p>
 		<br />
 		<div class="left server-info">
+			<h3 style="text-align: left">Server Owner</h3>
 			<p>
-				Server Owner:
 				{#if server.owner !== undefined}
 					<span class="playertag">{server.owner}</span>
 				{:else}
 					Unknown
 				{/if}
 			</p>
+			<h3 style="text-align: left">Status</h3>
 			<p>
-				Status:{' '}
 				{#if server.status !== undefined}
 					{#if server.status == 'saved'}
 						<span class="status" data-status="saved">World file saved</span>
@@ -93,6 +93,14 @@
 
 	section {
 		height: 100%;
+	}
+
+	h3 {
+		margin-bottom: -0.3rem;
+	}
+
+	p {
+		margin-block: 0;
 	}
 
 	.server-info {
