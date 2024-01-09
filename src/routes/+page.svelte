@@ -134,8 +134,8 @@
 
 			<h3>Netlify</h3>
 			<p>
-				It's a such a great site for deploying sites. I've been using it since like 2017 when it was
-				called BitBalloon and I would zip up my HTML site and upload it on there to deploy new
+				It's a such a great site for deploying sites. I've been using it since around 2017 when it
+				was called BitBalloon and I would zip up my HTML site and upload it on there to deploy new
 				changes. Nowadays, I have deploys linked to a GitHub repo, so any time it gets a new push,
 				Netlify builds the latest update.
 			</p>

@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"name": "Christmas Server 2017",
-					"owner": "imjusthere",
+					"owner": ["imjusthere"],
 					"datecreated": "14th December 2017",
 					"dateended": "17th January 2018",
 					"status": "lost",
@@ -13,7 +13,7 @@
 						"driedramen",
 						"DumbleDog_",
 						"Cherrysauce88",
-						"croissant",
+						"crossssiannnnntt",
 						"imjusthere",
 						"inkvoiid",
 						"MannyFPS",
@@ -22,7 +22,8 @@
 						"Salt_Bucket",
 						"TaffetaOx",
 						"The_Ampharos"
-					]
+					],
+					"thumbnail": "christmas2017/2017-12-17_16.12.15.png"
 				}
 			]
 		},
@@ -31,7 +32,7 @@
 			"entries": [
 				{
 					"name": "Cosy Village Server",
-					"owner": "imjusthere",
+					"owner": ["imjusthere"],
 					"datecreated": "18th January 2018",
 					"dateended": "13th February 2018",
 					"status": "lost",
@@ -39,23 +40,25 @@
 						"driedramen",
 						"DumbleDog_",
 						"Cherrysauce88",
-						"croissant",
+						"crossssiannnnntt",
 						"imjusthere",
 						"inkvoiid",
 						"MannyFPS",
 						"phinagin",
 						"TaffetaOx"
-					]
+					],
+					"thumbnail": "cosyvillage/Screenshot (103).png"
 				},
 				{
 					"name": "Fort Pent Server",
 					"datecreated": "July 2018",
 					"status": "lost",
-					"players": ["DumbleDog_", "Cherrysauce88", "inkvoiid"]
+					"players": ["DumbleDog_", "Cherrysauce88", "inkvoiid"],
+					"thumbnail": "fortpent/Screenshot (383).png"
 				},
 				{
 					"name": "Mountain Houses Server",
-					"owner": "Cherrysauce88",
+					"owner": ["Cherrysauce88"],
 					"datecreated": "November 2018",
 					"status": "lost",
 					"players": [
@@ -65,7 +68,8 @@
 						"Cherrysauce88",
 						"imjusthere",
 						"inkvoiid"
-					]
+					],
+					"thumbnail": "mountainhouses/Screenshot (711).png"
 				}
 			]
 		},
@@ -74,15 +78,33 @@
 			"entries": [
 				{
 					"name": "Hardcore Servers",
-					"owner": "D4M3Nx",
+					"owner": ["D4M3Nx"],
 					"datecreated": "May 2019",
-					"status": "lost"
+					"status": "lost",
+					"players": [
+						"Adoven_",
+						"AyyItsNia",
+						"CommanderJono",
+						"D4M3Nx",
+						"david_342",
+						"DumbleDog_",
+						"inkvoiid",
+						"Jaws9976",
+						"LovableAyden",
+						"MannyFPS",
+						"ToxsicScorpion",
+						"VladimirCromwell",
+						"WispyDutchess"
+					],
+					"thumbnail": "hardcoreservers/2019-05-29_23.29.07.png"
 				},
 				{
 					"name": "Bamboo Bridge Server",
-					"owner": "D4M3Nx",
+					"owner": ["D4M3Nx"],
 					"datecreated": "November 2019",
-					"status": "lost"
+					"status": "lost",
+					"players": ["Cherrysauce88", "D4M3Nx", "DumbleDog_", "inkvoiid", "Koo998", "UltraNova_"],
+					"thumbnail": "bamboobridge/image.png"
 				}
 			]
 		},
@@ -91,24 +113,30 @@
 			"entries": [
 				{
 					"name": "Aych Server",
-					"owner": "VladimirCromwell",
+					"owner": ["VladimirCromwell"],
 					"datecreated": "January 2020",
 					"status": "saved",
 					"players": [
+						"AyyItsNia",
 						"Cherrysauce88",
+						"D4M3Nx",
+						"david_342",
 						"DumbleDog_",
 						"inkvoiid",
-						"Ranrag",
+						"imjusthere",
+						"MannyFPS",
+						"ranrag",
 						"Salt_Bucket",
 						"SaltyCyn",
 						"UltraNova_",
 						"VladimirCromwell",
 						"WispyDutchess"
-					]
+					],
+					"thumbnail": "aych/2020-02-22_21.26.17.png"
 				},
 				{
 					"name": "Parasite Server",
-					"owner": "inkvoiid",
+					"owner": ["inkvoiid"],
 					"datecreated": "August 2020",
 					"status": "saved",
 					"players": [
@@ -116,17 +144,35 @@
 						"DumbleDog_",
 						"emurgh",
 						"inkvoiid",
-						"Ranrag",
+						"ranrag",
 						"SaltyCyn",
 						"UltraNova_",
 						"VladimirCromwell",
 						"WispyDutchess"
-					]
+					],
+					"thumbnail": "parasite/2022-02-05_22.51.51.png"
 				},
 				{
 					"name": "Christmas Village Realm",
-					"owner": "Haybale_NZ",
-					"datecreated": "December 2020"
+					"owner": ["Haybale_NZ"],
+					"datecreated": "December 2020",
+					"players": [
+						"AyyItsNia",
+						"CommanderJono",
+						"DumbleDog_",
+						"Cherrysauce88",
+						"Haybale_NZ",
+						"Heh_Lame",
+						"inkvoiid",
+						"Lost",
+						"LovableAyden",
+						"MannyFPS",
+						"ranrag",
+						"Salt_Bucket",
+						"VladimirCromwell",
+						"WispyDutchess"
+					],
+					"thumbnail": "christmasvillagerealm/2020-12-08_21.57.05.png"
 				}
 			]
 		},
@@ -135,12 +181,32 @@
 			"entries": [
 				{
 					"name": "Christmas Village Server",
-					"owner": "Haybale_NZ",
-					"datecreated": "November 2021"
+					"owner": ["Haybale_NZ"],
+					"datecreated": "November 2021",
+					"players": [
+						"AyyItsNia",
+						"CommanderJono",
+						"D4M3Nx",
+						"DumbleDog_",
+						"Cherrysauce88",
+						"Haybale_NZ",
+						"inkvoiid",
+						"Lost",
+						"MannyFPS",
+						"PandaRevolution",
+						"ObiWanKenobi",
+						"ranrag",
+						"Salt_Bucket",
+						"ToxsicScorpion",
+						"UltraNova_",
+						"VladimirCromwell",
+						"WispyDutchess"
+					],
+					"thumbnail": "christmasvillage2021/2021-11-12_00.22.04.png"
 				},
 				{
 					"name": "Feed The Beast Modded",
-					"owner": "inkvoiid",
+					"owner": ["inkvoiid"],
 					"datecreated": "December 2021",
 					"status": "saved",
 					"players": [
@@ -150,7 +216,8 @@
 						"MannyFPS",
 						"ratinmikitchen",
 						"UltraNova_"
-					]
+					],
+					"thumbnail": "ftbmodded/2021-12-27_07.54.12.png"
 				}
 			]
 		},
@@ -159,7 +226,7 @@
 			"entries": [
 				{
 					"name": "Cave Server",
-					"owner": "VladimirCromwell",
+					"owner": ["VladimirCromwell"],
 					"datecreated": "February 2022",
 					"status": "saved",
 					"players": [
@@ -172,11 +239,12 @@
 						"Salt_Bucket",
 						"VladimirCromwell",
 						"WispyDutchess"
-					]
+					],
+					"thumbnail": "caveserver/2022-02-20_11.27.28.png"
 				},
 				{
-					"name": "Christmas Server",
-					"owner": "inkvoiid",
+					"name": "Holiday Server",
+					"owner": ["inkvoiid"],
 					"datecreated": "November 2022",
 					"dateended": "December 2022",
 					"status": "saved",
@@ -194,7 +262,8 @@
 						"UltraNova_",
 						"VladimirCromwell",
 						"WispyDutchess"
-					]
+					],
+					"thumbnail": "holiday2022/2022-12-13_01.54.45.png"
 				}
 			]
 		},
@@ -203,8 +272,9 @@
 			"entries": [
 				{
 					"name": "Cursed Island Server",
-					"owner": "VladimirCromwell",
+					"owner": ["VladimirCromwell"],
 					"datecreated": "March 2023",
+					"status": "lost",
 					"players": [
 						"D4M3Nx",
 						"DawnSnow",
@@ -217,7 +287,36 @@
 						"VladimirCromwell",
 						"WispyDutchess"
 					],
+					"thumbnail": "cursedisland/2023-03-28_22.00.37.png",
 					"gallerypath": "../../media/images/minecraftworlds/cursedisland"
+				},
+				{
+					"name": "Summer Minecraft",
+					"owner": ["Haybale_NZ", "LovableAyden"],
+					"datecreated": "11th November 2023",
+					"dateended": "11th January 2024",
+					"status": "lost",
+					"players": [
+						"AyyItsNia",
+						"CommanderJono",
+						"crossssiannnnntt",
+						"D4M3Nx",
+						"DumbleDog_",
+						"Cherrysauce88",
+						"Haybale_NZ",
+						"Heh_Lame",
+						"inkvoiid",
+						"LovableAyden",
+						"MannyFPS",
+						"PandaRevolution",
+						"quarnt",
+						"ranrag",
+						"Salt_Bucket",
+						"UltraNova_",
+						"VladimirCromwell",
+						"WispyDutchess"
+					],
+					"thumbnail": "summerminecraft/2023-11-16_20.34.47.png"
 				}
 			]
 		}
