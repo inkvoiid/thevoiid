@@ -9,6 +9,8 @@
 	 * @property {string[]} [players] - The list of players on the server.
 	 * @property {string} [thumbnail] - A picture of the server.
 	 * @property {string} [gallerypath] - The path to the corresponding gallery of images.
+	 * @property {string} [downloadlink] - A download link for the server.
+	 * @property {string} [downloadsize] - The size of the download.
 	 */
 
 	/** @type {ServerInfo} */
@@ -83,6 +85,20 @@
 			{:else}
 				<p style="margin-block: 0">Unknown</p>
 			{/if}
+
+			<p>
+				{#if server.downloadlink !== undefined}
+					{#if server.downloadsize !== undefined}
+						<a href={server.downloadlink} target="_blank" rel="noreferrer"
+							>Download World File [{server.downloadsize}]</a
+						>
+					{:else}
+						<a href={server.downloadlink} target="_blank" rel="noreferrer">Download World File</a>
+					{/if}
+				{:else if server.status === 'saved'}
+					<p>⚠️ World File Unavailable</p>
+				{/if}
+			</p>
 		</div>
 	</section>
 </article>

@@ -132,7 +132,9 @@
 						"VladimirCromwell",
 						"WispyDutchess"
 					],
-					"thumbnail": "aych/2020-02-22_21.26.17.png"
+					"thumbnail": "aych/2020-02-22_21.26.17.png",
+					"downloadlink": "https://drive.google.com/uc?export=download&id=1aL03nSWp2eOwUthlMrc9IYPT_t56jQ6A",
+					"downloadsize": "102MB"
 				},
 				{
 					"name": "Parasite Server",
@@ -150,7 +152,9 @@
 						"VladimirCromwell",
 						"WispyDutchess"
 					],
-					"thumbnail": "parasite/2022-02-05_22.51.51.png"
+					"thumbnail": "parasite/2022-02-05_22.51.51.png",
+					"downloadlink": "https://drive.google.com/uc?export=download&id=1nc871s3R-g6fych3qP6zhXr8wWPgv97z",
+					"downloadsize": "260MB"
 				},
 				{
 					"name": "Christmas Village Realm",
@@ -240,7 +244,9 @@
 						"VladimirCromwell",
 						"WispyDutchess"
 					],
-					"thumbnail": "caveserver/2022-02-20_11.27.28.png"
+					"thumbnail": "caveserver/2022-02-20_11.27.28.png",
+					"downloadlink": "https://drive.google.com/uc?export=download&id=1YezuHbYVNtdjcA7HwAvwGx81mCILxlN2",
+					"downloadsize": "42.6MB"
 				},
 				{
 					"name": "Holiday Server",
@@ -263,7 +269,9 @@
 						"VladimirCromwell",
 						"WispyDutchess"
 					],
-					"thumbnail": "holiday2022/2022-12-13_01.54.45.png"
+					"thumbnail": "holiday2022/2022-12-13_01.54.45.png",
+					"downloadlink": "https://drive.google.com/uc?export=download&id=1DeOUwAgVSCK2S9o-lUyGD88Z49qEhawu",
+					"downloadsize": "115MB"
 				}
 			]
 		},
@@ -295,7 +303,7 @@
 					"owner": ["Haybale_NZ", "LovableAyden"],
 					"datecreated": "11th November 2023",
 					"dateended": "11th January 2024",
-					"status": "lost",
+					"status": "saved",
 					"players": [
 						"AyyItsNia",
 						"CommanderJono",
