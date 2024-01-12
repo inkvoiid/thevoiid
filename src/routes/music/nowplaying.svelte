@@ -23,7 +23,7 @@
 	 * @returns {Promise<LastFMResponse>} The promise that resolves to the Last.fm API response.
 	 */
 	export async function load() {
-		const res = await fetch(
+		let res = await fetch(
 			`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=inkvoiid&api_key=${LASTFM_API_KEY}&format=json&limit=5`
 		);
 		const data = await res.json();
@@ -31,18 +31,32 @@
 		return data;
 	}
 
-	/** @type {LastFMResponse}*/
-	let lastplayed;
+	/** @type {LastFMResponse|null}*/
+	let lastplayed = null;
 
 	(async () => {
 		lastplayed = await load();
-		console.log(lastplayed);
 	})();
 </script>
 
-<div style="width:auto">
-	{#await lastplayed}
-		<p>Loading...</p>
+<div style="width:100%">
+	{#await load()}
+		<!-- Dummy data from a hardcoded array while loading -->
+		{#each Array(5) as _}
+			<div class="track">
+				<div class="track-images">
+					<!-- Cover Image -->
+					<img src="/images/nocover.png" width="64px" alt="Loading Track" class="track-cover" />
+				</div>
+
+				<!-- Track Info -->
+				<div class="track-info">
+					<p class="track-name">Loading Track</p>
+
+					<span class="track-play-date">Loading Track</span>
+				</div>
+			</div>
+		{/each}
 	{:then data}
 		{#each Array.from(data?.recenttracks.track || []) as track (track.name)}
 			<!-- Add the "now-playing" class to the track that is currently playing -->
@@ -68,7 +82,9 @@
 
 				<!-- Track Info -->
 				<div class="track-info">
-					<p class="track-name">{track.name} - {track.artist['#text']}</p>
+					<a href={track.url} target="_blank" rel="noreferrer" class="track-name"
+						>{track.name} - {track.artist['#text']}</a
+					>
 
 					{#if track['@attr'] && track['@attr'].nowplaying === 'true'}
 						<span class="track-play-date">Now Playing</span>
@@ -120,12 +136,16 @@
 	}
 
 	.track:nth-child(even) {
-		background-color: white;
+		background-color: #fff;
 	}
 
 	.now-playing {
 		background-color: var(--brown);
-		color: white;
+		color: #fff;
+	}
+
+	.now-playing a {
+		color: #fff;
 	}
 
 	.track-info {
@@ -133,6 +153,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+		align-items: flex-start;
 	}
 
 	.track-play-date {
@@ -143,6 +164,12 @@
 	.track-name {
 		font-weight: 500;
 		margin: 0;
+		background: none;
+	}
+
+	.track-name:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
 	}
 
 	@-moz-keyframes spin {
