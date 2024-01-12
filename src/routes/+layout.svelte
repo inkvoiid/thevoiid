@@ -55,7 +55,6 @@
 	:global(*) {
 		margin: 0;
 		padding: 0;
-		font: inherit;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
