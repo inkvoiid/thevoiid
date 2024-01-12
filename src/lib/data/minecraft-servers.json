@@ -103,7 +103,15 @@
 					"owner": ["D4M3Nx"],
 					"datecreated": "November 2019",
 					"status": "lost",
-					"players": ["Cherrysauce88", "D4M3Nx", "DumbleDog_", "inkvoiid", "Koo998", "UltraNova_"],
+					"players": [
+						"Cherrysauce88",
+						"D4M3Nx",
+						"DumbleDog_",
+						"inkvoiid",
+						"Koo998",
+						"UltraNova_",
+						"WispyDutchess"
+					],
 					"thumbnail": "bamboobridge/image.png"
 				}
 			]
@@ -171,7 +179,6 @@
 						"Lost",
 						"LovableAyden",
 						"MannyFPS",
-						"ranrag",
 						"Salt_Bucket",
 						"VladimirCromwell",
 						"WispyDutchess"
