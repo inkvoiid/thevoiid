@@ -22,12 +22,13 @@
 	 * Load recent tracks from Last.fm API.
 	 * @returns {Promise<LastFMResponse>} The promise that resolves to the Last.fm API response.
 	 */
-	export async function load() {
+	export async function fetchTracks() {
 		let res = await fetch(
 			`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=inkvoiid&api_key=${LASTFM_API_KEY}&format=json&limit=5`
 		);
 		const data = await res.json();
-
+		// If there is a track currently playing, the api fetches 6 tracks, so trim it to match the loading skeleton
+		data.recenttracks.track = data.recenttracks.track.slice(0, 5);
 		return data;
 	}
 
@@ -35,12 +36,12 @@
 	let lastplayed = null;
 
 	(async () => {
-		lastplayed = await load();
+		lastplayed = await fetchTracks();
 	})();
 </script>
 
 <div style="width:100%">
-	{#await load()}
+	{#await fetchTracks()}
 		<!-- Dummy data from a hardcoded array while loading -->
 		{#each Array(5) as _}
 			<div class="track">
@@ -120,8 +121,8 @@
 		position: relative;
 		margin: 0.5rem;
 		display: block;
-		box-shadow: 2px 2px 5px #00000050;
-		border-radius: 0.3rem;
+		box-shadow: 2px 2px 5px #00000025;
+		/* border-radius: 0.3rem; */
 		z-index: 2;
 	}
 
@@ -144,16 +145,20 @@
 		color: #fff;
 	}
 
+	.now-playing .track-info {
+		padding-inline: 1rem;
+	}
+
 	.now-playing a {
 		color: #fff;
 	}
 
 	.track-info {
-		padding-inline: 1em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: flex-start;
+		padding-inline: 0.25rem;
 	}
 
 	.track-play-date {
