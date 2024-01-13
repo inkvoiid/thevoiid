@@ -22,9 +22,17 @@
 		status: 'Unknown',
 		players: ['Unknown']
 	};
+
+	/** @param {string} string */
+	const kebabCase = (string) =>
+		string
+			.replace(/([a-z])([A-Z])/g, '$1-$2')
+			.replace(/[\s_]+/g, '-')
+			.replace(/'/g, '')
+			.toLowerCase();
 </script>
 
-<article class="container mcworldcontainer">
+<article id={kebabCase(server.name)} class="container server-preview">
 	<section>
 		<img
 			class="rounded"
@@ -36,8 +44,8 @@
 		<!-- <ImageGallery items={images} /> -->
 	</section>
 
-	<section style="padding-inline: 2%">
-		<h2>{server.name}</h2>
+	<section class="server-text">
+		<h2><a href={'#' + kebabCase(server.name)}>#</a>{server.name}</h2>
 		<p class="subheader">
 			{#if server.datecreated !== undefined}
 				{server.datecreated} - {server.dateended ?? 'Unknown Date'}
@@ -46,6 +54,7 @@
 			{/if}
 		</p>
 		<br />
+		<!-- Server Owner -->
 		<div class="left server-info">
 			<h3 style="text-align: left">Server Owner</h3>
 			<p>
@@ -54,9 +63,10 @@
 						<span class="playertag">{owner}</span>
 					{/each}
 				{:else}
-					Unknown
+					<i>Unknown</i>
 				{/if}
 			</p>
+			<!-- Status -->
 			<h3 style="text-align: left">Status</h3>
 			<p>
 				{#if server.status !== undefined}
@@ -116,12 +126,28 @@
 		height: 100%;
 	}
 
+	h2 a {
+		position: absolute;
+		right: 1rem;
+		opacity: 0%;
+		background: none;
+		transition: opacity 0.25s;
+	}
+
+	article:hover h2 a {
+		opacity: 75%;
+	}
+
 	h3 {
 		margin-bottom: -0.3rem;
 	}
 
 	p {
-		margin-block: 0;
+		margin: 0;
+	}
+
+	.server-text {
+		padding-inline: 2%;
 	}
 
 	.server-info {
@@ -174,5 +200,23 @@
 
 	.status[data-status='lost']::before {
 		content: '🪦';
+	}
+
+	@media screen and (max-width: 768px) {
+		.server-preview {
+			grid-template-columns: 1fr;
+		}
+
+		.server-text {
+			padding-inline: 0;
+		}
+
+		h2 a {
+			display: none;
+		}
+
+		p {
+			margin: 0;
+		}
 	}
 </style>

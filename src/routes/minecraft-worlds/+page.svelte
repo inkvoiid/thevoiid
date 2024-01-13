@@ -90,8 +90,11 @@
 		color: #fff;
 		margin-top: 1rem;
 		text-decoration-color: var(--year-colour);
+		--year-colour: var(--brown);
 	}
-
+	.year-2014 {
+		--year-colour: rgb(164, 16, 80);
+	}
 	.year-2017 {
 		--year-colour: rgb(70, 130, 180);
 	}
@@ -118,5 +121,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		.section-nav {
+			display: none;
+		}
 	}
 </style>
