@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>The Voiid (Legacy) - the voiid.</title>
+</svelte:head>
 <div id="content">
 	<iframe title="Old Site" width="100%" height="100%" src="/the-voiid-old/index.html"></iframe>
 </div>

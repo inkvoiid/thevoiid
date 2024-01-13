@@ -5,6 +5,9 @@
 	console.log(serverData);
 </script>
 
+<svelte:head>
+	<title>Minecraft Servers - the voiid.</title>
+</svelte:head>
 <div id="mc-servers" class="section-nav">
 	<p>Quick Jump</p>
 	{#each serverData.servers as servers}
@@ -12,12 +15,12 @@
 	{/each}
 </div>
 <main>
-	<h1 class="page-title underline">Minecraft Worlds</h1>
+	<h1 class="page-title underline">Minecraft Servers</h1>
 
 	<section class="container">
 		<p>
-			View some of the Minecraft server worlds I've catalogued. Who knows? Perhaps you might have
-			taken part in some of them.
+			View some of the Minecraft servers I've catalogued. Who knows? Perhaps you might have taken
+			part in some of them. Credit to DumbleDog, who without, this wouldn't be nearly as accurate.
 		</p>
 		<p>
 			While you're here, you may be interested in my resource pack, <a href="/projects/voiidpack"

@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>Projects - the voiid.</title>
+</svelte:head>
 <main>
 	<h1 class="page-title underline">Projects</h1>
 	<div class="container">

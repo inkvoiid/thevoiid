@@ -16,7 +16,7 @@
 		<span class="splitter"></span>
 
 		<a href="/photography"> Photography </a>
-		<a href="/minecraft-worlds"> Minecraft Worlds </a>
+		<a href="/minecraft-servers"> Minecraft Servers </a>
 		<a href="/music"> Music </a>
 	</div>
 </nav>
@@ -444,7 +444,9 @@
 	}
 
 	nav a:hover,
-	nav button:hover {
+	nav a:focus,
+	nav button:hover,
+	nav button:focus {
 		border-radius: 1.75rem;
 		background-color: white;
 		color: var(--brown);
@@ -490,7 +492,7 @@
 		}
 
 		:global(.container) {
-			padding: 1rem 5vw;
+			padding: 1rem;
 		}
 
 		:global(.container h1) {
@@ -510,16 +512,16 @@
 			float: right;
 		}
 		nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 			width: 100%;
 			background-color: var(--brown);
 			backdrop-filter: none;
 			box-sizing: border-box;
-			display: block;
 			margin: 0;
 			border-radius: 0%;
 			top: 0;
-			display: flex;
-			flex-direction: row;
 		}
 
 		.nav-links {
@@ -530,7 +532,7 @@
 			backdrop-filter: blur(2px);
 			width: 100%;
 			left: 0;
-			top: 3.33rem;
+			top: 2.75rem;
 			padding-block: 0.5rem;
 			overflow: hidden;
 			margin-top: 0;

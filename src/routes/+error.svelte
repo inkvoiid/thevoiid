@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>Error 404 - the voiid.</title>
+</svelte:head>
 <main>
 	<h1 class="page-title underline">Found Not Paged</h1>
 	<h2>Big unfortunate</h2>

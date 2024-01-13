@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>About Me - the voiid.</title>
+</svelte:head>
 <main>
 	<h1 class="page-title underline">About Me</h1>
 

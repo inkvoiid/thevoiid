@@ -1,3 +1,10 @@
+<svelte:head>
+	<title>the voiid. by inkvoiid</title>
+	<meta
+		name="description"
+		content="the voiid by inkvoiid. Personal website and portfolio of sorts."
+	/>
+</svelte:head>
 <main>
 	<div class="title">
 		<h1 class="title-text">the voiid.</h1>
