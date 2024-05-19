@@ -11,7 +11,7 @@
 		<p class="title-subtext">by inkvoiid</p>
 
 		<br />
-		<div class="intro">
+		<div id="main-content" class="intro">
 			<h2 class="hero-greet">
 				Hey, I am
 				<a
@@ -45,6 +45,7 @@
 		<p>
 			<b>Note:</b> This site isn't intended to be purely professional. Random things ensue.
 		</p>
+		<p><q>My domain is my domain</q> - <cite>Will Toledo</cite></p>
 	</article>
 	<article class="container outer-container container-green">
 		<h1>Featured Projects</h1>
@@ -165,11 +166,12 @@
 		margin: 0 auto;
 		margin-bottom: -1.5rem;
 		font-weight: 700;
+		letter-spacing: -3px;
 	}
 
 	.title-subtext {
 		margin-top: 0;
-		margin-right: min(2.5rem, 5vw);
+		margin-right: 2rem;
 		text-align: right;
 		font-size: min(2rem, 4vw);
 		opacity: 75%;
@@ -182,6 +184,9 @@
 		align-items: center;
 	}
 
+	.hero-greet {
+		font-size: 1.75rem;
+	}
 	.hero-greet a {
 		color: #fff;
 	}
@@ -250,6 +255,16 @@
 	@media screen and (max-width: 600px) {
 		.projects-grid {
 			grid-template-columns: 1fr;
+		}
+
+		.title-text {
+			font-size: 72px;
+		}
+
+		.title-subtext {
+			margin-top: 0.66rem;
+			margin-right: 2.5vw;
+			font-size: 18px;
 		}
 	}
 </style>
