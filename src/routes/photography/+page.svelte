@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import Polaroid from './polaroid.svelte';
 </script>
 
 <svelte:head>
 	<title>Photography - the voiid.</title>
 </svelte:head>
-<main>
+<main id="main-content">
 	<h1 class="page-title underline">Photography</h1>
 	<article>
 		<section class="photography-intro container">

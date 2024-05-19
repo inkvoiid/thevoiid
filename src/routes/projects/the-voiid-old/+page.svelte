@@ -1,12 +1,12 @@
 <svelte:head>
 	<title>The Voiid (Legacy) - the voiid.</title>
 </svelte:head>
-<div id="content">
+<div id="main-content">
 	<iframe title="Old Site" width="100%" height="100%" src="/the-voiid-old/index.html"></iframe>
 </div>
 
 <style>
-	#content {
+	#main-content {
 		position: absolute;
 		left: 0;
 		right: 0;

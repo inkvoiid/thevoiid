@@ -1,8 +1,6 @@
-<script>
-	/** @type {string} */
-	export let src;
-	/** @type {string} */
-	export let name;
+<script lang="ts">
+	export let src: string;
+	export let name: string;
 </script>
 
 <div class="polaroid">
