@@ -1,20 +1,18 @@
-<script>
-	/**
-	 * @typedef {Object} ServerInfo
-	 * @property {string} name - The name of the server.
-	 * @property {string[]} [owner] - The owner of the server.
-	 * @property {string} [datecreated] - The date the server was created.
-	 * @property {string} [dateended] - The date the server ended.
-	 * @property {string} [status] - The status of the server.
-	 * @property {string[]} [players] - The list of players on the server.
-	 * @property {string} [thumbnail] - A picture of the server.
-	 * @property {string} [gallerypath] - The path to the corresponding gallery of images.
-	 * @property {string} [downloadlink] - A download link for the server.
-	 * @property {string} [downloadsize] - The size of the download.
-	 */
+<script lang="ts">
+	type ServerInfo = {
+		name: string;
+		owner?: string[];
+		datecreated?: string;
+		dateended?: string;
+		status?: string;
+		players?: string[];
+		thumbnail?: string;
+		gallerypath?: string;
+		downloadlink?: string;
+		downloadsize?: string;
+	};
 
-	/** @type {ServerInfo} */
-	export let server = {
+	export let server: ServerInfo = {
 		name: 'Unknown Server',
 		owner: ['Unknown'],
 		datecreated: 'Unknown Date',
@@ -23,8 +21,7 @@
 		players: ['Unknown']
 	};
 
-	/** @param {string} string */
-	const kebabCase = (string) =>
+	const kebabCase = (string: string) =>
 		string
 			.replace(/([a-z])([A-Z])/g, '$1-$2')
 			.replace(/[\s_]+/g, '-')

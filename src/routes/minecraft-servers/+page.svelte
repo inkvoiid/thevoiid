@@ -1,8 +1,6 @@
-<script>
+<script lang="ts">
 	import * as serverData from '$lib/data/minecraft-servers.json';
 	import ServerPreview from './serverpreview.svelte';
-
-	console.log(serverData);
 </script>
 
 <svelte:head>
@@ -14,13 +12,13 @@
 		<a href="#{servers.year}" class="year-{servers.year}">{servers.year}</a>
 	{/each}
 </div>
-<main>
+<main id="main-content">
 	<h1 class="page-title underline">Minecraft Servers</h1>
 
 	<section class="container">
 		<p>
 			View some of the Minecraft servers I've catalogued. Who knows? Perhaps you might have taken
-			part in some of them. Credit to DumbleDog, who without, this wouldn't be nearly as accurate.
+			part in some of them. Credit to DumbleDog, without whom this wouldn't be nearly as accurate.
 		</p>
 		<p>
 			While you're here, you may be interested in my resource pack, <a href="/projects/voiidpack"
@@ -95,7 +93,7 @@
 		text-decoration-color: var(--year-colour);
 		--year-colour: var(--brown);
 	}
-	.year-2014 {
+	.year-2015 {
 		--year-colour: rgb(164, 16, 80);
 	}
 	.year-2017 {
